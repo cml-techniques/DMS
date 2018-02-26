@@ -1,0 +1,76 @@
+﻿        #dvRightHead {
+            position:fixed;
+            text-align:right;
+            left:0px;
+            top:0px;
+            background-color:#343838;  
+            width:100%;
+        }
+        #dvViewMain {
+            position:absolute;
+            left:5px;
+            right:0px;
+            bottom:56px;
+            top:30px;
+            height:95%;
+        }
+        #dvViewManual {
+        position:absolute;
+        left:0px;
+        width:63%;
+        height:100%
+        }
+        #dvViewManual1 {
+        position:absolute;
+        left:5px;
+        width:98%;
+        right:5px;
+        bottom:5px;
+        height:90%;
+        top:30px;
+        }
+        #myframe {
+       width:100%;
+       height:100%;
+        }
+        #dvComments {
+        position:absolute;
+        width:330px;
+        right:5px;
+        overflow:auto;
+        height:550px;
+        overflow-y:hidden;
+}
+         .CenterBlack{
+        background-color:black;
+        color:white;
+        text-align:center;
+        width:100%;
+        }
+    body {
+    margin:0;
+	padding:0;
+	font-size:13px;
+	font-family:'Open Sans', sans-serif;
+	color:#F8F8F2;
+    background-color:#76a5af;
+    }
+#gvComment {
+    color:black;
+    background-color: #666666;
+}
+.colorblack {
+    background-color:black
+}
+#dvCommentGrid {
+    position:absolute;
+    width:100%;
+    overflow-y:scroll;
+    overflow-x:hidden;
+   background-color:#76a5af;
+    left: 0px;
+    height:235px;
+}
+.PageNoStyle {
+    width:60px;
+}

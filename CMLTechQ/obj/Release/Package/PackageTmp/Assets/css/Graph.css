@@ -1,0 +1,103 @@
+﻿body {
+	background: rgb(255, 255, 255); font: 12px/20px "Helvetica Neue", Arial, sans-serif; margin: 0px; padding: 0px; color: rgb(34, 34, 34); font-size-adjust: none; font-stretch: normal;
+}
+h2 {
+	margin: 0px 0px 20px; padding: 0px; text-align: center; line-height: 20px; font-size: 18px; font-weight: normal;
+}
+h4 {
+	margin: 0px 0px 20px; padding: 0px; text-align: center; color: rgb(84, 84, 84); line-height: 20px; font-size: 14px; font-weight: normal;
+}
+a {
+	color: rgb(51, 51, 51);
+}
+#data-table {
+	border-width: 1px medium medium; border-style: solid none none; border-color: rgb(204, 204, 204) currentColor currentColor; border-image: none; width: 100%;
+}
+#data-table caption {
+	margin: 0px 0px 20px; padding: 0px; text-align: center; color: rgb(84, 84, 84); line-height: 20px; font-size: 14px; font-weight: normal;
+}
+#data-table thead {
+	background: rgb(240, 240, 240);
+}
+#data-table th {
+	border-width: medium medium 1px; border-style: none none solid; border-color: currentColor currentColor rgb(204, 204, 204); margin: 0px; padding: 10px; border-image: none; text-align: left;
+}
+#data-table td {
+	border-width: medium medium 1px; border-style: none none solid; border-color: currentColor currentColor rgb(204, 204, 204); margin: 0px; padding: 10px; border-image: none; text-align: left;
+}
+.toggles {
+	background: rgb(235, 235, 235); padding: 15px; height: 20px; color: rgb(84, 84, 84);
+}
+.toggles p {
+	margin: 0px;
+}
+.toggles a {
+	background: rgb(34, 34, 34); margin: 0px 10px 0px 0px; padding: 0px 6px; border-radius: 3px; color: rgb(255, 255, 255); text-decoration: none; float: left; display: block;
+}
+.toggles a:hover {
+	background: rgb(102, 102, 102);
+}
+#reset-graph-button {
+	float: right;
+}
+#wrapper {
+	margin: -210px 0px 0px -270px; left: 25%; top: 50%; width: 75%; height: 420px; position: absolute;
+}
+#figure {
+	height: 380px; position: relative;
+}
+#figure ul {
+	list-style: none; margin: 0px; padding: 0px;
+}
+.graph {
+	height: 283px; position: relative;
+}
+.legend {
+	background: rgb(240, 240, 240); border-radius: 4px; width:75%; text-align: left; bottom: 0px; position: absolute;
+}
+.legend li {
+	margin: 0px; padding: 10px 30px; width: 120px; height: 20px; float: left; display: block;
+}
+.legend span.icon {
+	background-position: 50% 0px; margin: 2px 10px 0px 0px; border-radius: 2px; width: 16px; height: 16px; float: left; display: block;
+}
+.x-axis {
+	width: 100%; text-align: center; bottom: 0px; color: rgb(85, 85, 85); position: absolute;
+}
+.x-axis li {
+	margin: 0px 15px; padding: 5px 0px; width: 100px; float: left;
+}
+.y-axis {
+	width: 100%; text-align: right; color: rgb(85, 85, 85); position: absolute;
+}
+.y-axis li {
+	width: 100%; height: 62px; border-top-color: rgb(204, 204, 204); border-top-width: 1px; border-top-style: solid; display: block;
+}
+.y-axis li span {
+	margin: -10px 0px 0px -60px; padding: 0px 10px; width: 40px; display: block;
+}
+.bars {
+	width: 100%; height: 253px; position: absolute; z-index: 10;
+}
+.bar-group {
+	margin: 0px 15px; width: 100px; height: 100%; float: left; position: relative;
+}
+.bar {
+	border-radius: 3px 3px 0px 0px; width: 25px; height: 0px; text-align: center; bottom: 0px; position: absolute; cursor: pointer;
+}
+.fig0.bar {
+	left: 0px;
+}
+.fig1.bar {
+	left: 26px;
+}
+.fig2.bar {
+	left: 52px;
+}
+.bar span {
+	background: rgb(254, 254, 254); margin: 0px; border-radius: 3px; left: -8px; width: 40px; display: none; position: relative; z-index: 20; box-shadow: 0px 1px 4px rgba(0,0,0,0.6); text-shadow: 0px 1px 0px rgba(255,255,255,0.8); -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 1px 4px;
+}
+.bar:hover span {
+	margin-top: -25px; display: block;
+}
+

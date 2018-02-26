@@ -1,0 +1,180 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Oswald);
+.tabs {
+	margin: 0px !important; padding: 0px; list-style-type: none !important;height:50px;width:855px;
+}
+.tabs1 {
+	margin:5px 0px 0px !important; padding: 0px; list-style-type: none !important;height:30px;border-top:solid 1px #45818e;width:855px;
+}
+.tabs2 {
+	margin:5px 0px 0px !important; padding: 0px; list-style-type: none !important;height:30px;border-top:solid 1px #45818e;width:855px;
+}
+.tabs3 {
+	margin:0px !important; padding: 0px; list-style-type: none !important;height:30px;padding-bottom:6px;margin-top:5px!important;
+}
+.tabs4 {
+	margin:0px !important; padding: 0px; list-style-type: none !important;height:34px;padding-bottom:6px;width:100%;overflow:hidden;
+}
+.home-portfolio-left .tabs {
+	padding: 0px !important; border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none; box-shadow: 0px 1px 2px rgba(0,0,0,0.07); -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px; -moz-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px;
+}
+.home-portfolio-left .tabs1 {
+	padding: 0px !important; border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none; box-shadow: 0px 1px 2px rgba(0,0,0,0.07); -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px; -moz-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px;
+}
+.tabs li {
+	 margin: 0px !important; padding: 0px !important; text-indent: 0px; float: left; list-style-type: none !important;
+}
+.tabs a {
+	margin: 0px; padding: 0px 10px; text-align: center; text-transform: uppercase; line-height: 50px; font-size:22px; font-weight: bold; text-decoration: none; display: block; position: relative;color:#ECE1C3!important;
+}
+.tabs a {
+	width: 186px; font-size:22px; font-weight: bold;height:50px;margin-right:10px;background-color:#195e63;box-shadow:2px 2px #13494D;
+}
+.tabs a.last {
+    margin-right:0px;
+}
+.tabs li {
+}
+ a:hover {
+	/*background: rgb(102, 102, 102);*/ 
+    background-color:#ece1c3;
+    color:#195e63;
+}
+.tabs a:hover {
+	color:#195e63!important;
+
+}
+.tabs a:active {
+	
+}
+
+.tabs .current {
+	/*background: rgb(102, 102, 102); color: rgb(255, 255, 255) !important;*/ font-size: 22px; font-weight: bold;background-color:#ece1c3;
+    color:#195e63!important;
+}
+.tabs .current:hover {
+	/*background: rgb(102, 102, 102); color: rgb(255, 255, 255) !important;*/ font-size: 22px; font-weight: bold;background-color:#ece1c3;
+    color:#195e63!important;
+}
+.tabs li.current a {
+	background: rgb(247, 247, 247); color: rgb(255, 255, 255) !important; font-size: 10px; font-weight: bold;
+}
+
+
+.tabs1 li {
+	 /*margin:5px 0px 0px 5px !important;*/ padding: 0px !important; text-indent: 0px; float: left; list-style-type: none !important;margin-top:5px;margin-left:6px;
+}
+    .tabs1 li.first {
+        margin-left:0px;
+    }
+.tabs1 a {
+	margin: 0px; padding: 0px 10px; text-align: center; color:#ECE1C3; text-transform: none; line-height: 30px; font-size: 13px; font-weight: bold; text-decoration: none; display: block; position: relative;
+}
+.tabs1 a {
+	 font-size: 13px; font-weight: bold;height:30px;background-color:#063940;width:97px;box-shadow:2px 2px #195E63;
+}
+.tabs1 li {
+}
+ .tabs1 a:hover {
+	background-color:#8EBDB6;
+}
+.tabs1 a:hover {
+	color: #ECE1C3;
+
+}
+.tabs1 a:active {
+	
+}
+.tabs1 .current {
+	background-color:#8EBDB6;color:#ECE1C3 !important; cursor: default !important;
+}
+.tabs1 .current:hover {
+	background-color:#8EBDB6; color:#ECE1C3 !important; cursor: default !important;
+}
+.tabs1 li.current a {
+	background:#45818e; color: rgb(85, 85, 85) !important; cursor: default !important;
+}
+.tabs1 .current {
+	background-color:#8EBDB6; color:#ECE1C3 !important; font-size: 14px; font-weight: bold;
+}
+.tabs1 .current:hover {
+	background-color:#8EBDB6; color:#ECE1C3 !important; font-size: 14px; font-weight: bold;
+}
+.tabs1 li.current a {
+	background-color:#8EBDB6; color:#ECE1C3 !important; font-size: 13px; font-weight: bold;
+}
+
+.tabs2 li {
+	 /*margin:5px 0px 0px 5px !important;*/ padding: 0px !important; text-indent: 0px; float: left; list-style-type: none !important;margin-top:5px;margin-right:5px;
+}
+.tabs2 a {
+	margin: 0px; padding: 0px 10px; text-align: center; color:#063940; text-transform: none; line-height: 30px; font-size: 13px; font-weight: bold; text-decoration: none; display: block; position: relative;border:solid 2px #063940;
+}
+.tabs2 a {
+	 font-size: 13px; font-weight: bold;height:30px;
+}
+.tabs2 li {
+}
+ .tabs2 a:hover {
+	background-color:#0c343d;
+}
+.tabs2 a:hover {
+	color: #ECE1C3;
+
+}
+.tabs2 a:active {
+	
+}
+
+/*.tabs2 .current {
+	background-color:#0c343d; color: rgb(255, 255, 255) !important; font-size: 14px; font-weight: bold;
+}
+.tabs2 .current:hover {
+	background-color:#0c343d; color: rgb(255, 255, 255) !important; font-size: 14px; font-weight: bold;
+}
+.tabs2 li.current a {
+	background-color:#45818e; color: rgb(255, 255, 255) !important; font-size: 13px; font-weight: bold;
+}*/
+
+.tabs3 li {
+	 padding: 0px !important; text-indent: 0px; float: left; list-style-type: none !important;margin-top:5px;margin-right:15px;
+}
+.tabs3 a {
+	margin: 0px; padding: 0px 10px; text-align: center;  text-transform: none; font-size: 13px; font-weight: bold; text-decoration: none; display: block; position: relative;
+}
+.tabs3 a {
+	 font-size: 13px;font-family: 'Open Sans', sans-serif;
+}
+.tabs3 li {
+}
+ .tabs3 a:hover {
+	background-color:#00CC66;color: #f9fafa !important;
+}
+
+
+.tabs3 .current {
+	background-color:#00CC66;color: #f9fafa !important;
+}
+
+
+.tabs4 li {
+	 padding: 0px !important; text-indent: 0px; float: left; list-style-type: none !important;margin-top:5px;margin-right:5px;width:12%;
+}
+    .tabs4 li:last-child {
+        margin-right:0px;
+    }
+.tabs4 a {
+	margin: 0px; padding: 0px 10px; text-align: center; color:#063940!important; text-transform: none; line-height: 23px; font-size: 13px; font-weight: bold; text-decoration: none; display: block; position: relative;border:solid 2px #063940;
+}
+.tabs4 a {
+	 font-size: 13px; font-weight: 400;height:25px;font-family: 'Open Sans', sans-serif;
+}
+.tabs4 li {
+}
+ .tabs4 a:hover {
+	background-color:#063940;color: rgb(236,225,195) !important;
+}
+
+
+.tabs4 .current {
+	background-color:#063940;color: rgb(236,225,195) !important;
+}

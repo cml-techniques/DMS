@@ -1,0 +1,83 @@
+﻿ .RadDropDownList_Default .rddlInner {
+            /*border-color: #D4D4D4 !important;*/
+            background-color: #E8EEEF!important;
+            border-radius: 4px !important;
+            background-image: none !important;
+            border: 1px solid #dddddd!important;
+            box-shadow: inset 1px 1px 0px rgba(255,255,153,0.3)!important;
+            /*padding: 5px!important;*/
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .rddlPopup_Default .rddlItemSelected {
+            background: none repeat scroll 0 0 #3399FF !important;
+        }
+
+        .rddlPopup_Default .rddlItemHovered {
+            background: none repeat scroll 0 0 #3399FF !important;
+        }
+
+        .RadDropDownList_Default .rddlInner {
+            font-weight: 600 !important;
+            color: black !important;
+        }
+
+        .RadDropDownList_Default .rddlIcon {
+            margin-top: 3px!important;
+            height: 20px!important;
+            width: 20px!important;
+        }
+
+        div.RadUpload .ruInputs {
+            margin-top: -28px!important;
+            z-index: 999!important;
+            position: relative;
+        }
+
+        div.RadUpload .ruProgress ul li {
+            background-color: rgba(0,51,204,1);
+        }
+
+        div.RadUpload .ruFileWrap span {
+            font-size: 14px!important;
+            color: #353535;
+            width: 60%;
+        }
+
+        div.RadUpload .ruRemove {
+            display: inline-block;
+            font-size: 14px;
+            background-color: #f00;
+            padding: 0px!important;
+            padding-left: 5px!important;
+            padding-right: 5px!important;
+            text-decoration: none!important;
+            color: #f5f5f5;
+        }
+
+        div.RadUpload .ruBrowse {
+            background-position: 0 -30px;
+            background-color: #0099CC!important;
+            box-shadow: 0px 2px 0px rgba(0,51,204,1);
+            color: #F9FAFA!important;
+            border: 0px;
+            font-weight: bold;
+            padding: 0!important;
+            border-radius: 4px;
+            display: block;
+            width: 100px;
+            margin: 0px;
+            cursor: pointer;
+        }
+
+        div.RadUpload_Default .ruFileWrap .ruButtonHover {
+            background-position: 100% -30px !important;
+        }
+
+
+        div.RadUpload .ruFakeInput {
+            border: 1px solid red !important;
+            width: 20px !important;
+            display: none;
+        }

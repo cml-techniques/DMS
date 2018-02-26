@@ -1,0 +1,171 @@
+/*!
+ * LiveGraph for jQuery v0.0.1
+ * http://github.com/lampieg/livegraph
+ *
+ * Copyright ?2013 lampieg (admin@lampieg.co.uk)
+ * Released under the MIT license
+ */
+
+div.liveGraph div.bars div.bar span { /* MATCHES ALL THE BARS IN THE GRAPH */
+/* rules here will apply to the onbar value... background and borders here will set the borders and background for the entire bar. */
+background: url("diagonals_trans.png");
+background-repeat: repeat;
+color: #073763;
+font-weight: bold;
+font-size: 20px;
+border: none !important;
+cursor:pointer;
+box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.1);
+border-radius: 4px;
+/*border-bottom: 1px #000 solid !important;
+border-top: 2px #000 solid !important;*/
+}
+/* ONLY MATCHES THE 6th BAR */
+div.liveGraph div.bars div[bar="tb8"] span {
+background-color: #FF0000;
+}
+div.liveGraph div.bars div[bar="tb7"] span {
+background-color: #00FF00;
+}
+/* ONLY MATCHES THE 6th BAR */
+div.liveGraph div.bars div[bar="tb6"] span {
+background-color: #FF0000;
+}
+/* ONLY MATCHES THE 5th BAR */
+div.liveGraph div.bars div[bar="tb5"] span {
+background-color: #00FF00;
+} 
+/* ONLY MATCHES THE 4th BAR */
+div.liveGraph div.bars div[bar="tb4"] span {
+background-color: #FF0000;
+}
+/* ONLY MATCHES THE 3rd BAR */
+div.liveGraph div.bars div[bar="tb3"] span {
+background-color: #00FF00;
+} /* ONLY MATCHES THE 2nd BAR */
+div.liveGraph div.bars div[bar="tb2"] span {
+background-color: #FF0000;
+} /* ONLY MATCHES THE 1st BAR */
+div.liveGraph div.bars div[bar="tb1"] span {
+background-color: #00FF00;
+} 
+/* Other page styling */
+div.liveGraph div.bars div[bar] span:hover {
+background-color: #808080;
+}
+div.liveGraph div.bars div[bar] span:hover .bardata {
+    text-align:center;
+display:block;
+}
+.barlabel {
+    height: 25px;
+     color:#C0C0C0;
+    margin: 0 auto;
+    width:100%;
+    font-size:16px;
+    font-weight:bold;
+    font-family:'Open Sans', sans-serif;
+    /*opacity:0.7;*/
+}
+.bubble 
+{
+position: relative;
+background-color:white;
+/*width: 60px;
+height: 20px;
+padding: 0px;
+background: #FFFFFF;*/
+/*border: #000 solid 1px;*/
+/*-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+margin:0 auto;*/
+}
+
+.bubble:after 
+{
+content: "";
+position: absolute;
+bottom: -5px;
+left: 25px;
+border-style: solid;
+border-width: 5px 5px 0;
+border-color: #e1e1e1 transparent;
+display: block;
+width: 0;
+z-index: 1;
+}
+
+/*.bubble:before 
+{
+content: "";
+position: absolute;
+top: 16px;
+left: 25px;
+border-style: solid;
+border-width: 6px 6px 0;
+border-color: #000 transparent;
+display: block;
+width: 0;
+z-index: 0;
+}*/
+
+.bardata {
+    top:-30px;
+    margin:0px auto;
+    /*display:none;*/
+    position:absolute;
+    text-align:center;
+    font-size:14px;
+    background-color:#F9FAFA;
+    width:100%;
+    font-weight:bold;
+    /*left:5px;*/
+   box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    color:#494949;
+}
+.barbackground {
+    margin:0px auto;
+    position:absolute;
+    width:100%;
+    height:100%;
+    border-radius: 4px;
+    background-color:#EdeFF0;
+}
+
+h1 {
+font-family: Cambria;
+font-size: 24pt;
+margin: 0;
+padding: 0;
+margin-bottom: 10px;
+}
+h2 {
+font-family: Cambria;
+font-size: 18pt;
+margin: 0;
+padding: 0;
+margin-bottom: 20px;
+}
+
+div.content {
+width: 600px;
+background: #fff;
+border-radius: 10px;
+padding: 20px;
+border: #ccc 2px solid;
+margin: 20px;
+}
+table {
+    background-color:red;
+border-collapse: collapse;
+
+}
+table, th, td {
+border: 5px solid white;
+padding: 4px;
+}
+thead td {
+font-weight: bold;
+}

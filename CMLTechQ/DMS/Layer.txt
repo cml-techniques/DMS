@@ -1,0 +1,8 @@
+     
+-------------BlAyer-------------------------
+
+   public void UpdateCommentBasket(_clscomment _obj, _database _objdb)
+        {
+            _objDLL.addtobasket("UpdateCommentBasket", _obj, _objdb);
+        }
+

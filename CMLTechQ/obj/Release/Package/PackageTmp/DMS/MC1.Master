@@ -1,0 +1,185 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MC1.master.cs" Inherits="CMLTechQ.DMS.MC1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>CML Techniques :: Web Based Document Management</title>
+    <meta name="author" content="CML Techniques" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <webopt:BundleReference ID="BundleReference1" runat="server" Path="~/Content/css" />
+    <link rel="stylesheet" href="../Assets/css/Navigation1.css" />
+
+ 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+       <style type="text/css">
+           #main-content h2.title {
+            font-size:13px;
+        }
+        body {
+                    color:#000000;
+                    margin: 0;
+                    padding: 0;
+                    font-size: 13px;
+                    font-family: 'Open Sans', sans-serif;
+                    background-color: #edeff0;
+                    color:red;
+         }
+            </style>
+         
+         
+   
+</head>
+<body style="overflow:hidden">
+    <form id="form1" runat="server">
+           <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+          <asp:Label ID="lblprj" runat="server" Text="" Style="display: none"></asp:Label>
+        <asp:Label ID="lblprjid" runat="server" Text="" Style="display: none"></asp:Label>
+        <asp:Label ID="lbluseridhidden" runat="server" Text="" Style="display: none"></asp:Label>
+          <asp:Label ID="lblfolder" runat="server" Text="" style="display:none"></asp:Label>
+
+        <input type="hidden" id="fid" runat="server" />
+             <input type="hidden" id="hmenufolder" runat="server" />
+          <input type="hidden" id="srvid" runat="server" />
+        
+        <div id="navtree1" >
+            <div id="dvtree1">
+                <div class="side-navbar-wrapper1" id="dvnav1">
+                  <%--  <asp:UpdatePanel ID="UpdatePanel11" runat="server">
+                    <ContentTemplate>--%>
+                    <asp:PlaceHolder ID="ph_mainNav" runat="server"></asp:PlaceHolder>
+                       <%-- </ContentTemplate>
+                        </asp:UpdatePanel>--%>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        
+ 
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+       
+</asp:ContentPlaceHolder>
+            
+
+
+
+    </form>
+
+   
+
+         <%: Scripts.Render("~/bundles/scripts") %>
+    <script lang="Javascript">
+        function Viewslide() {
+
+
+
+            var $e = $("#navtree1");
+
+
+            if (!$e.is(':hidden')) {
+
+                $("#doc-container").css("left", "5px");
+                $("#container-menu-bar").css("left", "5px");
+
+
+                // alert('hideedn');
+
+
+            }
+            else {
+
+
+                $("#doc-container").css("left", "275px");
+                $("#container-menu-bar").css("left", "275px");
+
+                //alert('show');
+            }
+
+            $("#navtree1").animate({ width: 'toggle' }, 350);
+
+
+
+
+
+        }
+        function PageNavaigation(id, type, folder) {
+
+            var _auth1 = document.getElementById("lbluseridhidden");
+            var _auth2 = document.getElementById("lblprjid");
+            //var _auth3 = document.getElementById("lblfolder");
+
+            //document.getElementById("lblfolder").textContent = id;
+
+          
+
+            if (type == 1) {
+                parent.document.getElementById("content").src = "NavWebForm1?Auth1=" + _auth1.textContent + "&Auth2=" + _auth2.textContent + "&Auth3=" + folder+ "&Auth5=" + id;
+            }
+            else if (type == 2) {
+                //parent.document.getElementById("content").src = "NavWebForm2?Auth1=" + _auth1.textContent + "&Auth2=" + _auth2.textContent + "&Auth3=" + folder + "&Auth4=2"+ "&Auth5=" + folder;
+            }
+            else if (type == 3) {
+                parent.document.getElementById("content").src = "NavWebForm3?Auth1=" + _auth1.textContent + "&Auth2=" + _auth2.textContent + "&Auth3=" + folder + "&Auth4=3" + "&Auth5=" + folder;
+            }
+            else if (type == 4) {
+                parent.document.getElementById("content").src = "NavWebForm4?Auth1=" + _auth1.textContent + "&Auth2=" + _auth2.textContent + "&Auth3=" + folder + "&Auth4=4" + "&Auth5=" + folder;
+            }
+            else {
+                // parent.document.getElementById("content").src = "DocumentList1?Auth1=" + _auth1.textContent + "&Auth2=" + _auth2.textContent + "&Auth3=" + id + "&Auth4=" + type + "&Auth5=" + folder;
+            }
+
+            //_changeActive();
+
+            $('.nav > li').removeClass('current');
+          
+        }
+        function _changeActive() {
+            $(function () {
+                $('.nav > li').click(function () {
+                    $('.nav > li').removeClass('current');
+                    $(this).addClass('current');
+                });
+            });
+        }
+    
+    </script>
+       <script type="text/javascript">
+           $(function () {
+
+               $("li.tier-two-menu-item").hover(function () {
+
+
+                   var $container = $(this),
+                       $list = $container.find("ul")
+
+                   //var offset = $container.offset();
+                   //var parentht = $container.parent().outerHeight();
+
+                   var listheight = $list.height();
+                   var offset = $list.offset();
+                 
+
+                   if (listheight != null) {
+
+                       if ((offset.top + listheight) > $(window).height()) {
+                           $list.css("position", "absolute");
+                           $list.css("top", $(window).height() - (offset.top + listheight) + 15);
+                       }
+                   }
+
+               });
+
+
+           });
+           </script>
+
+   
+
+</body>
+</html>

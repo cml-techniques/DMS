@@ -1,0 +1,426 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: none;
+  letter-spacing: 0.9px;
+  list-style: none;
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;    
+  box-sizing: border-box;
+}
+
+.clearfix:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+body {
+  background-color: #DFECE6;
+  height: 100%;
+  padding:0px;
+  margin:0px;
+}
+body {
+scrollbar-face-color:#073763;
+scrollbar-shadow-color: #073763;
+scrollbar-highlight-color:#073763;
+scrollbar-3dlight-color: #073763;
+scrollbar-darkshadow-color: #073763;
+scrollbar-track-color: #45848e;
+scrollbar-arrow-color: #45848e;
+
+}
+
+
+h2, h3 {
+  margin: 0;
+}
+
+/*================================
+  COLORS
+================================*/
+
+/*------------HEADER----------->*/
+
+
+.head {
+  background-color: #063940;
+  box-shadow: 0 2px  #8EBDB6;
+}
+
+.head h1,
+.head a {
+  color: #8EBDB6;
+}
+
+.head a:hover {
+  color: #ECE1C3;
+}
+
+
+/*----------BACKGROUND--------->*/
+
+body {
+  background-color: #eee;
+}
+
+/*----------FORM-HEAD--------->*/
+
+.form-head {
+  background-color: #063940;
+  color: #8EBDB6;
+}
+
+/*----------FORM-NAV--------->*/
+
+.form-nav {
+  background-color: #195E63;
+}
+
+.button,
+input, select {
+  background-color: #3E838C;
+}
+
+.button {
+  box-shadow: 0 1px  #063940;
+}
+
+.button a {
+  color: #ECE1C3;
+  }
+
+.button:hover, .button a:hover {
+  background-color: #79BD9A;
+  color: #0B486B;
+  border-radius: 3px;
+}
+
+h3 {
+  color: #0B486B;
+}
+
+/*----------FORM-ENTRY--------->*/
+
+.form-entry {
+  background-color: #8EBDB6;
+}
+
+input, select {
+  color: #ECE1C3;
+}
+
+select {
+  background: #3E838C url(../img/down.png) no-repeat;
+}
+
+label {
+  color: #0B486B;
+}
+
+/*--------Project Select------->*/
+
+.proj-select {
+  background-color: #8EBDB6;
+}
+
+.proj-select input{
+  color: #0B486B;
+}
+
+
+
+/*================================
+  HEADER
+================================*/
+
+.head {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.head h1 {
+  margin: 0;
+  margin-right: 700px;
+}
+
+.head ul {
+  margin: 0;
+}
+
+.head h1, 
+.head ul {
+  float: left;
+}
+
+
+
+.head h1,
+.head a {
+  margin-left: 20px;
+}
+
+.head ul li {
+  display: inline-block;
+  line-height: 40px;
+}
+
+.current a {
+  font-weight: 700;
+}
+
+
+
+/*================================
+  FORM - LEFT
+================================*/
+
+.new-form {
+  width: 920px;
+  height: 500px;
+  margin: 20px auto;
+}
+
+.form-head {
+  padding: 5px;
+}
+
+.form-head h2 {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.form-nav {
+  height: 40px;
+}
+
+.form-nav ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+.button {
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  width: 100px;
+  text-align: center;
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
+  margin-left: 20px;
+  border-radius: 3px;
+}
+
+.button a {
+  width: 100px;
+  line-height: 25px;
+  display: block;
+}
+
+
+.form-entry {
+  float: left;
+  display: inline-block;
+  height: 450px;
+  width: 460px;
+  padding: 20px;
+  overflow: hidden;
+  font-size:16px;
+}
+
+input[type=text], select {
+  width: 320px;
+  display: block;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 2px;
+  font-size:16px;
+}
+
+input[type=text] {
+ text-indent: 5px; 
+}
+
+select {
+  border: 0 !important; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-position: 300px 1px; 
+  width: 320px;
+  text-indent: 0.01px;
+  text-overflow: ""; 
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+
+label {
+  width: 70px;
+  font-weight: 700;
+}
+
+.form-entry label {
+  float: left;
+  margin-right: 25px;
+}
+
+
+
+/*================================
+  FORM - RIGHT
+================================*/
+
+.proj-select {
+  float: left;
+  display: inline-block;
+  height: 450px;
+  width: 460px;
+  padding: 20px;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+
+.proj-select input{
+  width: 25px;
+  display: inline;
+  margin-bottom: 5px;
+}
+
+.proj-select .lower {
+  font-weight: 300;
+  display: inline-block;
+  width: 100px;
+  margin-right: 30px;
+}
+
+.main {
+  display: inline-block;
+  width: 175px;
+  margin-right: 30px;
+  font-weight: 700;
+}
+
+.main h3 {
+  margin-bottom: 10px;
+}
+
+/*input[type=checkbox].css-checkbox {
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0, 0, 0, 0); 
+  height:1px; 
+  width:1px; 
+  margin:-1px; 
+  padding:0;
+  border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+  padding-left:20px;
+  height:20px; 
+  display:block;
+  line-height:20px;
+  background-repeat:no-repeat;
+  background-position: 0 0;
+  font-size:15px;
+  vertical-align:middle;
+  cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+  background-position: 0 -20px;
+}*/
+            
+.css-label{ 
+  background-image:url(../img/web-two-style.png); 
+  width: 420px;
+  margin-top: 10px;
+}
+
+.css-label span {
+  margin-left: 10px;
+}
+
+.checkbottom {
+  width: 420px;
+  height: 10px;
+  border-bottom: 1px solid #111;
+  margin-bottom:9px;
+}
+
+.small-proj {
+  font-size: 13px !important;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  width: 100px;
+  text-align: center;
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
+  border-radius: 3px;
+  border: 0;
+  vertical-align: center;
+  margin-left: 95px;
+  box-shadow: 0 1px  #063940;
+  font-size:16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #79BD9A;
+  color: #0B486B;
+  border-radius: 3px;
+}
+
+#last-sub {
+  margin-left: 20px;
+}
+
+.mycheck input {
+    width: 15px;
+    height: 15px;
+}
+.region-class{
+    padding:0px!important;
+    margin:0px!important;
+    height: 20px;
+    display: block;
+    line-height: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight:700;
+    text-transform:none!important;
+    color: #0B486B;
+    padding-left:10px!important;
+}
+.prj-class {
+    padding: 0px!important;
+    margin: 0px!important;
+    height: 20px;
+    display: block;
+    line-height: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 400;
+    text-transform: none!important;
+    color: #0B486B;
+    padding-left:10px!important;
+}
+
+table {
+    border:0px;
+    padding:0px;
+    margin:0px;
+}
+td {
+    padding:0px;
+}

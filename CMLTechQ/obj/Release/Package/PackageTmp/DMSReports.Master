@@ -1,0 +1,786 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DMSReports.master.cs" Inherits="CMLTechQ.DMSReports" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>DMS Reports</title>
+    <link href="../Assets/css/Layout.css" rel="stylesheet" />
+    <link href="../Assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../AMS/css/font-awesome.min.css" rel="stylesheet" />
+    <%--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" AsyncPostBackTimeout="3600"></ajaxToolkit:ToolkitScriptManager>
+        <asp:Label ID="lblprj" runat="server" Text="" Style="display: none"></asp:Label>
+        <asp:Label ID="lblprjid" runat="server" Text="" Style="display: none"></asp:Label>
+        <asp:Label ID="lbluserid" runat="server" Text="" Style="display: none"></asp:Label>
+        <asp:Label ID="lbluserhidden" runat="server" Text="" Style="display: none"></asp:Label>
+
+        <asp:Label ID="lblvalue" runat="server" Text="" Style="display: none"></asp:Label>
+
+        <input type="hidden" id="Hidden1" name="hfolder" runat="server" />
+        <input type="hidden" id="hprogressid" name="hprogressid" runat="server" />
+        <input type="hidden" id="htype" name="htype" runat="server" />
+        <input type="hidden" id="hcount" name="hcount" runat="server" />
+        <div id="docview_area">
+            <div class="pulldownbar">
+                <div class="togglemenu">
+                    <a href="#" title="Toggle Sidebar" data-prl-offcanvas="{target:'#offcanvas-search'}"><i class="fa fa-navicon"></i></a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="control-panel">
+                    <div class="halfwidth-left">
+                        <div class="menubar ">
+                            <ul class="left">
+                                <li><a href="#" class="active">Progress Tracking Sheet</a></li>
+                                <li><a href="#">Doument Status Graph</a></li>
+                                <li class="last"><a href="#">Summary of Uploads</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="halfwidth-right">
+                        <div class="menubar">
+                            <ul class="right">
+                                <li><a href="#">Expand</a></li>
+                                <li><a href="#">Collapse</a></li>
+                                <li><a href="#">Print</a></li>
+                                <li><a href="#">Settings</a></li>
+                                <li class="last"><a href="#">New Item</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="back-block">
+                    <a href="#"><i class="fa fa-angle-double-left"></i>BACK</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="container-block" style="top: 70px">
+
+                <div id="HeaderDiv" onclick="HideTextMode();">
+                    <table class="table-style3" style="width: 100%; table-layout: fixed" cellpadding="0" cellspacing="0">
+                        <tr class="hrow">
+                            <td style="width: 5%; text-align: center" valign="middle">Volume No
+                                <%--<div class="title-big">Volume No</div>--%>
+
+
+                                <%--<table style="border:none">
+                    <tr>
+                        <td style="width: 20px;border:none"><a style="color: #ffffff; font-weight: 700; font-size: 16px;" href="#" onclick="expandall(1);" title="Collapse All"><i class="icon-plus-sign"></i></a></td>
+                        <td style="border:none"><a style="color: #ffffff; font-weight: 700; font-size: 16px" href="#" onclick="expandall(2);" title="Expand All"><i class="icon-minus-sign"></i></a></td>
+                      
+                    </tr>
+                </table>--%>
+
+                            </td>
+                            <td style="width: 11%; text-align: center" valign="middle">List of O&amp;M Manuals</td>
+                            <%--<td style="text-align: center">Section 1</td>
+                            <td style="text-align: center">Section 2</td>
+                            <td style="text-align: center">Section 3</td>
+                            <td style="text-align: center">Section 4</td>
+                            <td style="text-align: center">Section 5</td>
+                            <td style="text-align: center">Section 6</td>
+                            <td style="text-align: center">Section 7</td>
+                            <td style="text-align: center">Section 8</td>
+                            <td style="text-align: center">Section 9</td>
+                            <td style="text-align: center">Section 10</td>--%>
+                            <td style="width: 7%; text-align: center" valign="middle">
+                                <div class="title-big">Section 1</div>
+                                <div class="title-small">Introduction / Health & Saftey</div>
+                            </td>
+                            <td style="width: 7%; text-align: center" valign="middle">
+                                <div class="title-big">Section 2</div>
+                                <div class="title-small">Description of Installation</div>
+                            </td>
+                            <td style="width: 7%; text-align: center" valign="middle">
+                                <div class="title-big">Section 3</div>
+                                <div class="title-small">Plant &amp; Equipment Schedules</div>
+                            </td>
+                            <td style="width: 7%; text-align: center" valign="middle">
+                                <div class="title-big">Section 4</div>
+                                <div class="title-small">Operating Procedures</div>
+                            </td>
+                            <td style="width: 7%; text-align: center" valign="middle">
+                                <div class="title-big">Section 5</div>
+                                <div class="title-small">Planned Manitenance & Spares</div>
+                            </td>
+                            <td style="width: 7%; text-align: center" valign="middle">
+                                <div class="title-big">Section 6</div>
+                                <div class="title-small">Emergency &amp; Fault Finding Procedures</div>
+                            </td>
+                            <td style="width: 7%; text-align: center" valign="middle">
+                                <div class="title-big">Section 7</div>
+                                <div class="title-small">Safety Procedures</div>
+                            </td>
+                            <td style="width: 7%; text-align: center" valign="middle">
+                                <div class="title-big">Section 8</div>
+                                <div class="title-small">Manufactures Literature</div>
+                            </td>
+                            <td style="width: 7%; text-align: center" valign="middle">
+                                <div class="title-big">Section 9</div>
+                                <div class="title-small">Testing &amp; Commissioning Data</div>
+                            </td>
+                            <td style="width: 7%; text-align: center" valign="middle">
+                                <div class="title-big">Section 10</div>
+                                <div class="title-small">As-Built Drawings</div>
+                            </td>
+                            <td style="width: 7%; text-align: center" valign="middle">Issue Date</td>
+                            <td style="width: 7%; text-align: center" valign="middle">Remarks</td>
+                        </tr>
+                        <%--<tr class="hrow">
+                            
+
+                        </tr>--%>
+                    </table>
+                </div>
+                <div id="Data">
+
+                    <%-- <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+                    <ContentTemplate>--%>
+                    <asp:Repeater ID="rptmmain" runat="server" OnItemDataBound="rptmmain_ItemDataBound" OnItemCommand="rptmmain_ItemCommand">
+                        <HeaderTemplate>
+                        </HeaderTemplate>
+                        <ItemTemplate>
+
+                            <div id="DataDiv">
+                                <div id='h<%#Container.ItemIndex %>' class="rptheader" onclick="getdata(<%#Container.ItemIndex %>);">
+                                    <p style="margin: 0; padding: 0px;"><a class="pull-left" style="margin-right: 10px; padding-left: 4px" href="#"><i class="icon-plus"></i></a><%# Eval("Folder_description") %> </p>
+                                    <asp:Label ID="lblsys" runat="server" Text='<%# Eval("ProgressFolder_Id") %>' Style="display: none"></asp:Label>
+                                </div>
+                                <div id='d<%#Container.ItemIndex %>' style="display: none" class="sub">
+
+                                    <asp:UpdatePanel ID="UpdatePanel3" runat="server">
+                                        <ContentTemplate>
+                                            <asp:Repeater ID="rptdetails" runat="server" OnItemDataBound="rptdetails_ItemDataBound" OnItemCommand="rptdetails_ItemCommand">
+                                                <HeaderTemplate>
+                                                    <table class="table-style3" cellspacing="0" border="0" style="width: 100%; font-size: 10px; table-layout: fixed">
+                                                </HeaderTemplate>
+                                                <ItemTemplate>
+                                                    <tr class="row">
+                                                        <td style="width: 5%"><%# Eval("Folder_code") %></td>
+                                                        <td style="width: 11%; text-align: left;"><%# Eval("Folder_description") %></td>
+                                                        <td style="width: 7%"><%# Eval("Section1") %></td>
+                                                        <td style="width: 7%"><%# Eval("Section2") %></td>
+                                                        <td style="width: 7%"><%# Eval("Section3") %></td>
+                                                        <td style="width: 7%"><%# Eval("Section4") %></td>
+                                                        <td style="width: 7%"><%# Eval("Section5") %></td>
+                                                        <td style="width: 7%"><%# Eval("Section6") %></td>
+                                                        <td style="width: 7%"><%# Eval("Section7") %></td>
+                                                        <td style="width: 7%"><%# Eval("Section8") %></td>
+                                                        <td style="width: 7%"><%# Eval("Section9") %></td>
+                                                        <td style="width: 7%"><%# Eval("Section10") %></td>
+                                                        <td style="width: 7%"><%# Eval("DraftIssueDate") %></td>
+                                                        <td style="width: 7%"><%# Eval("Remarks") %></td>
+                                                    </tr>
+                                                    <%--<tr id="row" class="row">
+
+
+                                                        <td style="width: 5%; text-align: center;"><%# Eval("Folder_code") %></td>
+                                                        <td style="width: 11%; text-align: left;"><%# Eval("Folder_description") %>  </td>
+
+                                                        <td style="width: 7%; text-align: center" id='td1<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,1);">
+
+                                                            <asp:Label ID="lbl1" Visible="false" ForeColor="#FF0000" runat="server" Text='<%# Eval("Section1") %>' />
+
+
+
+                                                            <asp:Image ID="img1" Visible="false" runat="server" ImageUrl="~/Assets/img/Checks.png" />
+                                                            <asp:TextBox ID="txt1" runat="server" Width="96px" OnTextChanged="txt1_TextChanged" MaxLength="3" onkeypress="return CheckNumerOnly(event);" />
+
+
+                                                        </td>
+
+                                                        <td style="width: 7%; text-align: center" id='td2<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,2);">
+
+                                                            <asp:Image ID="img2" Visible="false" runat="server" ImageUrl="~/Assets/img/Checks.png" />
+                                                            <asp:Label ID="lbl2" Visible="false" ForeColor="#FF0000" runat="server" Text='<%# Eval("Section2") %>' />
+                                                            <asp:TextBox ID="txt2" runat="server" Text='<%# Eval("Section2") %>' OnTextChanged="txt2_TextChanged" Width="96px" ClientIDMode="Static" MaxLength="3" onkeypress="return CheckNumerOnly(event);" />
+
+                                                        </td>
+                                                        <td style="width: 7%; text-align: center" id='td3<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,3);">
+                                                            <asp:Image ID="img3" Visible="false" runat="server" ImageUrl="~/Assets/img/Checks.png" />
+                                                            <asp:Label ID="lbl3" Visible="false" ForeColor="#FF0000" runat="server" Text='<%# Eval("Section3") %>' />
+                                                            <asp:TextBox ID="txt3" runat="server" Text='<%# Eval("Section3") %>' OnTextChanged="txt3_TextChanged" Width="96px" ClientIDMode="Static" MaxLength="3" onkeypress="return CheckNumerOnly(event);" />
+                                                        </td>
+                                                        <td style="width: 7%; text-align: center" id='td4<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,4);">
+                                                            <asp:Image ID="img4" Visible="false" runat="server" ImageUrl="~/Assets/img/Checks.png" />
+                                                            <asp:Label ID="lbl4" Visible="false" ForeColor="#FF0000" runat="server" Text='<%# Eval("Section4") %>' />
+                                                            <asp:TextBox ID="txt4" runat="server" Text='<%# Eval("Section4") %>' OnTextChanged="txt4_TextChanged" Width="96px" ClientIDMode="Static" MaxLength="3" onkeypress="return CheckNumerOnly(event);" />
+                                                        </td>
+                                                        <td style="width: 7%; text-align: center" id='td5<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,5);">
+                                                            <asp:Image ID="img5" Visible="false" runat="server" ImageUrl="~/Assets/img/Checks.png" />
+                                                            <asp:Label ID="lbl5" Visible="false" ForeColor="#FF0000" runat="server" Text='<%# Eval("Section5") %>' />
+                                                            <asp:TextBox ID="txt5" runat="server" Text='<%# Eval("Section5") %>' OnTextChanged="txt5_TextChanged" Width="96px" ClientIDMode="Static" MaxLength="3" onkeypress="return CheckNumerOnly(event);" />
+                                                        </td>
+                                                        <td style="width: 7%; text-align: center" id='td6<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,6);">
+                                                            <asp:Image ID="img6" Visible="false" runat="server" ImageUrl="~/Assets/img/Checks.png" />
+                                                            <asp:Label ID="lbl6" Visible="false" ForeColor="#FF0000" runat="server" Text='<%# Eval("Section6") %>' />
+                                                            <asp:TextBox ID="txt6" runat="server" Text='<%# Eval("Section6") %>' OnTextChanged="txt6_TextChanged" Width="96px" ClientIDMode="Static" MaxLength="3" onkeypress="return CheckNumerOnly(event);" />
+                                                        </td>
+                                                        <td style="width: 7%; text-align: center" id='td7<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,7);">
+                                                            <asp:Image ID="img7" Visible="false" runat="server" ImageUrl="~/Assets/img/Checks.png" />
+                                                            <asp:Label ID="lbl7" Visible="false" ForeColor="#FF0000" runat="server" Text='<%# Eval("Section7") %>' />
+                                                            <asp:TextBox ID="txt7" runat="server" Text='<%# Eval("Section7") %>' OnTextChanged="txt7_TextChanged" Width="96px" ClientIDMode="Static" MaxLength="3" onkeypress="return CheckNumerOnly(event);" />
+                                                        </td>
+                                                        <td style="width: 7%; text-align: center" id='td8<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,8);">
+                                                            <asp:Image ID="img8" Visible="false" runat="server" ImageUrl="~/Assets/img/Checks.png" />
+                                                            <asp:Label ID="lbl8" Visible="false" ForeColor="#FF0000" runat="server" Text='<%# Eval("Section8") %>' />
+                                                            <asp:TextBox ID="txt8" runat="server" Text='<%# Eval("Section8") %>' OnTextChanged="txt8_TextChanged" Width="96px" ClientIDMode="Static" MaxLength="3" onkeypress="return CheckNumerOnly(event);" />
+                                                        </td>
+                                                        <td style="width: 7%; text-align: center" id='td9<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,9);">
+                                                            <asp:Image ID="img9" Visible="false" runat="server" ImageUrl="~/Assets/img/Checks.png" />
+                                                            <asp:Label ID="lbl9" Visible="false" ForeColor="#FF0000" runat="server" Text='<%# Eval("Section9") %>' />
+                                                            <asp:TextBox ID="txt9" runat="server" Text='<%# Eval("Section9") %>' OnTextChanged="txt9_TextChanged" Width="96px" ClientIDMode="Static" MaxLength="3" onkeypress="return CheckNumerOnly(event);" />
+                                                        </td>
+                                                        <td style="width: 7%; text-align: center" id='td10<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,10);">
+                                                            <asp:Image ID="img10" Visible="false" runat="server" ImageUrl="~/Assets/img/Checks.png" />
+                                                            <asp:Label ID="lbl10" Visible="false" ForeColor="#FF0000" runat="server" Text='<%# Eval("Section10") %>' />
+                                                            <asp:TextBox ID="txt10" runat="server" Text='<%# Eval("Section10") %>' OnTextChanged="txt10_TextChanged" Width="96px" ClientIDMode="Static" MaxLength="3" onkeypress="return CheckNumerOnly(event);" />
+                                                        </td>
+                                                        <td style="width: 7%; text-align: center" id='td11<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,11);">
+
+
+                                                            <asp:Label ID="lbl11" ForeColor="#FF0000" runat="server" Text='<%# Eval("DraftIssueDate") %>' />
+
+                                                            <asp:TextBox ID="txt11" runat="server" Text='<%# Eval("DraftIssueDate") %>' OnTextChanged="txt11_TextChanged" Width="96px" MaxLength="10" />
+
+
+                                                            <ajaxToolkit:CalendarExtender runat="server" Enabled="True" TargetControlID="txt11" ID="CalendarExtender1" PopupButtonID="txt11" Format="dd/MM/yyyy" PopupPosition="TopRight" OnClientShown="showCalendar" CssClass="Calendar"></ajaxToolkit:CalendarExtender>
+
+
+
+
+
+
+                                                        </td>
+                                                        <td style="width: 7%; text-align: left" id='td12<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,12);">
+                                                            <asp:Label ID="lbl12" Width="110px" ForeColor="#FF0000" runat="server" Text='<%# Eval("Remarks") %>' />
+                                                            <asp:TextBox ID="txt12" runat="server" Text='<%# Eval("Remarks") %>' OnTextChanged="txt12_TextChanged" Width="110px" ClientIDMode="Static" />
+
+                                                        </td>
+                                                    </tr>--%>
+                                                </ItemTemplate>
+                                                <AlternatingItemTemplate>
+                                                    <tr class="alter">
+                                                        <td style="width: 5%"><%# Eval("Folder_code") %></td>
+                                                        <td style="width: 11%; text-align: left;"><%# Eval("Folder_description") %></td>
+                                                        <td style="width: 7%"><%# Eval("Section1") %></td>
+                                                        <td style="width: 7%"><%# Eval("Section2") %></td>
+                                                        <td style="width: 7%"><%# Eval("Section3") %></td>
+                                                        <td style="width: 7%"><%# Eval("Section4") %></td>
+                                                        <td style="width: 7%"><%# Eval("Section5") %></td>
+                                                        <td style="width: 7%"><%# Eval("Section6") %></td>
+                                                        <td style="width: 7%"><%# Eval("Section7") %></td>
+                                                        <td style="width: 7%"><%# Eval("Section8") %></td>
+                                                        <td style="width: 7%"><%# Eval("Section9") %></td>
+                                                        <td style="width: 7%"><%# Eval("Section10") %></td>
+                                                        <td style="width: 7%"><%# Eval("DraftIssueDate") %></td>
+                                                        <td style="width: 7%"><%# Eval("Remarks") %></td>
+                                                    </tr>
+                                                    <%--<tr class="alter" id="row">
+                                                        <td style="width: 50px; text-align: center;" onclick="HideTextMode();"><%# Eval("Folder_code") %></td>
+                                                        <td style="width: 180px; text-align: left;"><%# Eval("Folder_description") %>  </td>
+
+                                                        <td style="width: 7%; text-align: center" id='td1<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,1);">
+
+                                                            <asp:Label ID="lbl1" Visible="false" ForeColor="#FF0000" runat="server" Text='<%# Eval("Section1") %>' />
+
+                                                            <asp:Image ID="img1" Visible="false" runat="server" ImageUrl="~/Assets/img/Checks.png" />
+
+                                                            <asp:TextBox ID="txt1" runat="server" Text='<%# Eval("Section1") %>' Width="96px" ClientIDMode="Static" OnTextChanged="txt1_TextChanged" AutoPostBack="false" MaxLength="3" onkeypress="return CheckNumerOnly(event);" />
+
+                                                        </td>
+
+                                                        <td style="width: 7%; text-align: center" id='td2<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,2);">
+
+                                                            <asp:Image ID="img2" Visible="false" runat="server" ImageUrl="~/Assets/img/Checks.png" />
+                                                            <asp:Label ID="lbl2" Visible="false" ForeColor="#FF0000" runat="server" Text='<%# Eval("Section2") %>' />
+                                                            <asp:TextBox ID="txt2" runat="server" Text='<%# Eval("Section2") %>' OnTextChanged="txt2_TextChanged" Width="96px" ClientIDMode="Static" MaxLength="3" onkeypress="return CheckNumerOnly(event);" />
+
+                                                        </td>
+                                                        <td style="width: 7%; text-align: center" id='td3<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,3);">
+                                                            <asp:Image ID="img3" Visible="false" runat="server" ImageUrl="~/Assets/img/Checks.png" />
+                                                            <asp:Label ID="lbl3" Visible="false" ForeColor="#FF0000" runat="server" Text='<%# Eval("Section3") %>' />
+                                                            <asp:TextBox ID="txt3" runat="server" Text='<%# Eval("Section3") %>' OnTextChanged="txt3_TextChanged" Width="96px" ClientIDMode="Static" MaxLength="3" onkeypress="return CheckNumerOnly(event);" />
+                                                        </td>
+                                                        <td style="width: 7%; text-align: center" id='td4<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,4);">
+                                                            <asp:Image ID="img4" Visible="false" runat="server" ImageUrl="~/Assets/img/Checks.png" />
+                                                            <asp:Label ID="lbl4" Visible="false" ForeColor="#FF0000" runat="server" Text='<%# Eval("Section4") %>' />
+                                                            <asp:TextBox ID="txt4" runat="server" Text='<%# Eval("Section4") %>' OnTextChanged="txt4_TextChanged" Width="96px" ClientIDMode="Static" MaxLength="3" onkeypress="return CheckNumerOnly(event);" />
+                                                        </td>
+                                                        <td style="width: 7%; text-align: center" id='td5<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,5);">
+                                                            <asp:Image ID="img5" Visible="false" runat="server" ImageUrl="~/Assets/img/Checks.png" />
+                                                            <asp:Label ID="lbl5" Visible="false" ForeColor="#FF0000" runat="server" Text='<%# Eval("Section5") %>' />
+                                                            <asp:TextBox ID="txt5" runat="server" Text='<%# Eval("Section5") %>' OnTextChanged="txt5_TextChanged" Width="96px" ClientIDMode="Static" MaxLength="3" onkeypress="return CheckNumerOnly(event);" />
+                                                        </td>
+                                                        <td style="width: 7%; text-align: center" id='td6<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,6);">
+                                                            <asp:Image ID="img6" Visible="false" runat="server" ImageUrl="~/Assets/img/Checks.png" />
+                                                            <asp:Label ID="lbl6" Visible="false" ForeColor="#FF0000" runat="server" Text='<%# Eval("Section6") %>' />
+                                                            <asp:TextBox ID="txt6" runat="server" Text='<%# Eval("Section6") %>' OnTextChanged="txt6_TextChanged" Width="96px" ClientIDMode="Static" MaxLength="3" onkeypress="return CheckNumerOnly(event);" />
+                                                        </td>
+                                                        <td style="width: 7%; text-align: center" id='td7<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,7);">
+                                                            <asp:Image ID="img7" Visible="false" runat="server" ImageUrl="~/Assets/img/Checks.png" />
+                                                            <asp:Label ID="lbl7" Visible="false" ForeColor="#FF0000" runat="server" Text='<%# Eval("Section7") %>' />
+                                                            <asp:TextBox ID="txt7" runat="server" Text='<%# Eval("Section7") %>' OnTextChanged="txt7_TextChanged" Width="96px" ClientIDMode="Static" MaxLength="3" onkeypress="return CheckNumerOnly(event);" />
+                                                        </td>
+                                                        <td style="width: 7%; text-align: center" id='td8<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,8);">
+                                                            <asp:Image ID="img8" Visible="false" runat="server" ImageUrl="~/Assets/img/Checks.png" />
+                                                            <asp:Label ID="lbl8" Visible="false" ForeColor="#FF0000" runat="server" Text='<%# Eval("Section8") %>' />
+                                                            <asp:TextBox ID="txt8" runat="server" Text='<%# Eval("Section8") %>' OnTextChanged="txt8_TextChanged" Width="96px" ClientIDMode="Static" MaxLength="3" onkeypress="return CheckNumerOnly(event);" />
+                                                        </td>
+                                                        <td style="width: 7%; text-align: center" id='td9<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,9);">
+                                                            <asp:Image ID="img9" Visible="false" runat="server" ImageUrl="~/Assets/img/Checks.png" />
+                                                            <asp:Label ID="lbl9" Visible="false" ForeColor="#FF0000" runat="server" Text='<%# Eval("Section9") %>' />
+                                                            <asp:TextBox ID="txt9" runat="server" Text='<%# Eval("Section9") %>' OnTextChanged="txt9_TextChanged" Width="96px" ClientIDMode="Static" MaxLength="3" onkeypress="return CheckNumerOnly(event);" />
+                                                        </td>
+                                                        <td style="width: 7%; text-align: center" id='td10<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,10);">
+                                                            <asp:Image ID="img10" Visible="false" runat="server" ImageUrl="~/Assets/img/Checks.png" />
+                                                            <asp:Label ID="lbl10" Visible="false" ForeColor="#FF0000" runat="server" Text='<%# Eval("Section10") %>' />
+                                                            <asp:TextBox ID="txt10" runat="server" Text='<%# Eval("Section10") %>' OnTextChanged="txt10_TextChanged" Width="96px" ClientIDMode="Static" MaxLength="3" onkeypress="return CheckNumerOnly(event);" />
+                                                        </td>
+                                                        <td style="width: 7%; text-align: center" id='td11<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,11);">
+                                                            <asp:Label ID="lbl11" ForeColor="#FF0000" runat="server" Text='<%# Eval("DraftIssueDate") %>' />
+
+                                                            <asp:TextBox ID="txt11" runat="server" Text='<%# Eval("DraftIssueDate") %>' OnTextChanged="txt11_TextChanged" Width="96px" MaxLength="10" />
+
+                                                            <ajaxToolkit:CalendarExtender runat="server" Enabled="True" TargetControlID="txt11" ID="CalendarExtender1" PopupButtonID="txt11" Format="dd/MM/yyyy" PopupPosition="TopRight" OnClientShown="showCalendar" CssClass="Calendar"></ajaxToolkit:CalendarExtender>
+
+
+                                                        </td>
+                                                        <td style="width: 7%; text-align: left" id='td12<%# Eval("ProgressFolder_id") %>' onclick="gos(<%# Eval("Progress_Id") %>,<%# Eval("ProgressFolder_id") %>,12);">
+                                                            <asp:Label ID="lbl12" Width="110px" ForeColor="#FF0000" runat="server" Text='<%# Eval("Remarks") %>' />
+                                                            <asp:TextBox ID="txt12" runat="server" Text='<%# Eval("Remarks") %>' OnTextChanged="txt12_TextChanged" Width="110px" ClientIDMode="Static" />
+
+                                                        </td>
+                                                    </tr>--%>
+                                                </AlternatingItemTemplate>
+                                                <FooterTemplate>
+                                                    </table>
+                                                </FooterTemplate>
+                                            </asp:Repeater>
+
+                                        </ContentTemplate>
+                                    </asp:UpdatePanel>
+                                </div>
+                            </div>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                    <%-- </ContentTemplate>
+                </asp:UpdatePanel>--%>
+                </div>
+            </div>
+        </div>
+        <asp:Label ID="lblid" runat="server" Text="" Style="display: none"></asp:Label>
+        <input type="hidden" id="hpos" name="hpos" runat="server" />
+        <input type="hidden" id="hfolder" name="hfolder" runat="server" />
+        <div id="offcanvas-search" class="prl-offcanvas">
+            <div class="prl-offcanvas-bar">
+                <div class="inner">
+                    <div id="nav-bar" style="top: 5px;">
+
+
+                        <ul class="topnav">
+                            <li class="item"><a href="#" onclick="gocreate();" title="Create Folder"><i class="icon-folder-close"></i></a></li>
+                            <li class="item"><a href="#"><i class="icon-file-alt"></i></a></li>
+                            <li class="item"><a href="#" onclick="gomove(1);" title="Move Up"><i class="icon-circle-arrow-up"></i></a></li>
+                            <li class="item"><a href="#" onclick="gomove(2);" title="Move Down"><i class="icon-circle-arrow-down"></i></a></li>
+                            <li class="item"><a href="#"><i class="icon-edit" onclick="goedit();" title="Edit Folder"></i></a></li>
+                            <li class="item"><a href="#" onclick="godelete();" title="Delete Folder"><i class="icon-trash"></i></a></li>
+                        </ul>
+
+
+                    </div>
+                    <div class="clear"></div>
+                    <div id="navbar">
+
+                        <div id="nav-menu">
+
+                            <asp:UpdatePanel ID="UpdatePanel4" runat="server" UpdateMode="Conditional">
+                                <ContentTemplate>
+
+                                    <asp:PlaceHolder ID="ph_nav" runat="server"></asp:PlaceHolder>
+
+                                </ContentTemplate>
+
+                            </asp:UpdatePanel>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <asp:Button ID="btndummy" runat="server" Text="btndummy" />
+        <asp:ModalPopupExtender ID="ModalPopupExtender1" runat="server" TargetControlID="btndummy" PopupControlID="pnlpop"></asp:ModalPopupExtender>
+
+        <asp:Panel ID="pnlpop" runat="server" Style="display: none; background: #cccccc;" Width="350px">
+
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
+
+                    <table class="tblpopoup1" style="width: 100%; background-color: #3e838c">
+                        <tr>
+                            <td class="poptext">
+                                <asp:Label ID="lblpnlhead" Text="Create Package" runat="server"></asp:Label></td>
+                            <td><a href="#" onclick="goclose();"><i style="color: white" class="icon-remove-sign pull-right icon liclose"></i></a></td>
+
+                        </tr>
+                    </table>
+
+                    <%--<div class="dvshadow" style="width:100%;">--%>
+
+                    <table class="tblpopoup1" style="background-color: #76a5af; width: 100%">
+                        <tr>
+                            <td style="width: 100%">
+
+                                <asp:RadioButtonList ID="rbtListfolder" runat="server" RepeatDirection="Horizontal" AutoPostBack="true" OnSelectedIndexChanged="rbtListfolder_SelectedIndexChanged" align="center" CssClass="radioButtonList" RepeatLayout="Table" RepeatColumns="2" Width="50%">
+                                    <asp:ListItem Text="Main" Value="1" Selected="True"></asp:ListItem>
+                                    <asp:ListItem Text="Folder" Value="2"></asp:ListItem>
+                                </asp:RadioButtonList>
+
+                            </td>
+                        </tr>
+
+                    </table>
+
+                    <table class="tblpopoup" style="width: 100%; background-color: #3e838c">
+                        <tr id="trsub" runat="server" visible="false">
+                            <td style="padding: 5px">
+                                <table cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td>
+                                            <asp:Label ID="Label2" runat="server" Text="Select Main"></asp:Label></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:DropDownList ID="ddlfolder" runat="server" Width="335px" AutoPostBack="true" Height="23px"></asp:DropDownList></td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left; padding: 5px" class="poptext">
+                                <asp:Label ID="lblhlp" Text="Enter Main" runat="server" /></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px">
+                                <table cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td id="tdcode" runat="server" visible="false">
+                                            <asp:TextBox ID="txtcode" Width="0px" runat="server"></asp:TextBox></td>
+                                        <td>
+                                            <asp:TextBox ID="txtfolder" Width="330px" runat="server"></asp:TextBox></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="tblbuttons">
+                                    <tr>
+                                        <td>
+
+                                            <asp:Button ID="btnfolder" runat="server" Text="Create" CssClass="controlstyle actstyle" OnClick="btnfolder_Click" Height="21px" />
+
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                        </tr>
+
+                    </table>
+
+                    <%-- <div>--%>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+
+        </asp:Panel>
+        <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+            <ContentTemplate>
+
+                <asp:Button ID="btndummy2" runat="server" Text="" Style="background-color: transparent; border: none" />
+                <asp:Button ID="btndummy1" runat="server" Text="btndummy1" OnClick="btndummy_Click" Style="display: none" />
+
+                <%--                                             <asp:Button ID="btnmain" Text="New main" runat="server" Height="100%" BackColor="Black" ForeColor="White" BorderStyle="None" OnClientClick="Showpopoup();" />--%>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+        <script src="plugins.js"></script>
+    <script src="../Assets/js/jquery.min.js"></script>
+    <script src="../Assets/js/jquery.nicescroll.js"></script>
+    <script type="text/javascript">
+        $(document).ready(
+            function () {
+                $("html").niceScroll({ styler: "fb", cursorcolor: "#353535", cursorwidth: '10', cursorborderradius: '0px', background: '#edeff0', cursorborder: '' });
+            });
+    </script>
+    <script type="text/javascript">
+        function _autoAdjust() {
+            //alert(msieversion());
+            var div = $("#navbar").height();
+            var win = $(window).height();
+            if (div < win) {
+                $("#navbar").addClass("bot5");
+            }
+            else {
+                $("#navbar").addClass("botauto");
+            }
+        }
+    </script>
+    <script type="text/javascript">
+
+        function HideTextMode() {
+            showlabel();
+            hideall();
+        }
+
+
+        function gos(_id, _folder, _type) {
+
+            HideTextMode();
+
+            document.getElementById("hprogressid").value = _id;
+            document.getElementById("hfolder").value = _folder;
+            document.getElementById("htype").value = _type;
+
+
+
+            $('#td' + _type + _folder).find('span').hide();
+            $('#td' + _type + _folder).find('img').hide();
+
+
+
+
+
+            $('#td' + _type + _folder).find('input').show();
+            //$('#td' + _type + _folder).find('input').
+            $('#td' + _type + _folder).find('input').select();
+
+
+
+        }
+        function hideall() {
+            $('#row td input').hide();
+        }
+        function showlabel() {
+
+            $('#row td span').show();
+            $('#row td img').show();
+
+        }
+    </script>
+    <script type="text/javascript">
+        function _autoAdjust() {
+            //alert(msieversion());
+            var div = $("#main-content").height();
+            var win = $(window).height();
+            if (div < win) {
+                //if (msieversion() > 0) {
+                //    var win = $(window).height() - 40;<a href="Schedule.aspx">Schedule.aspx</a>
+                //}
+                //else {
+                //    var win = $(window).height() - 40;
+                //}
+                //$("#main-content").height(win);
+                $("#main-content").addClass("botzero");
+            }
+            else {
+                $("#main-content").addClass("botauto");
+            }
+        }
+    </script>
+    <script type="text/javascript">
+
+        function CheckNumerOnly(evt) {
+            var charCode = (evt.which) ? evt.which : evt.keyCode
+            if (charCode != 46 && charCode > 31
+            && (charCode < 48 || charCode > 57))
+                return false;
+            return true;
+        }
+
+        function expandall(type) {
+            var hcount = document.getElementById("hcount").value;
+            for (var i = 0; i <= hcount; i++) {
+                expand(i, type);
+            }
+            scrollheight();
+            HideTextMode();
+        }
+        function expand(i, type) {
+            var e = document.getElementById('d' + i);
+            if (e) {
+                if (type == 1) {
+                    if (e.style.display == 'none') {
+                        e.style.display = 'block';
+                        e.style.visibility = 'visible';
+                        jQuery('#h' + i).find('i').removeClass('icon-plus').addClass('icon-minus');
+                    }
+                }
+                else {
+                    if (e.style.display != 'none') {
+                        e.style.display = 'none';
+                        e.style.visibility = 'hidden';
+                        jQuery('#h' + i).find('i').removeClass('icon-minus').addClass('icon-plus');
+                    }
+                }
+            }
+        }
+
+        function goprint() {
+
+            var _auth1 = document.getElementById("lbluserhidden");
+            var _auth2 = document.getElementById("lblprjid");
+            var url = "ProgressTrackReport?Auth1=" + _auth1.textContent + "&Auth2=" + _auth2.textContent;
+            window.open(url, '', '', true);
+        }
+
+        function getdata(id) {
+            var e = document.getElementById('d' + id);
+
+            if (e) {
+                if (e.style.display == 'none') {
+                    e.style.display = 'block';
+                    e.style.visibility = 'visible';
+                    // _changeActive(id);
+                    // _changeActive();rptheader
+                    jQuery('#h' + id).find('i').removeClass('icon-plus').addClass('icon-minus');
+                    jQuery('#h' + id).removeClass('rptheader').addClass('rptheader-select');
+                }
+                else {
+                    e.style.display = 'none';
+                    e.style.visibility = 'hidden';
+                    jQuery('#h' + id).find('i').removeClass('icon-minus').addClass('icon-plus');
+                    jQuery('#h' + id).removeClass('rptheader-select').addClass('rptheader');
+                    // _changeInActive();
+                    // _changeInActive(id);
+                }
+
+            }
+            HideTextMode();
+            scrollheight();
+
+        }
+        function setheightdefault() {
+
+            var div1 = document.getElementById('HeaderDiv');
+            div1.setAttribute("style", "border-right:none");
+
+
+        }
+        //function _changeActive(id) {
+        //    $(function () {
+        //        $('.rptheader').click(function () {
+        //            jQuery(this).find('i').removeClass('icon-plus').addClass('icon-minus');
+        //            //jQuery(this).find('i').addClass('icon-minus');
+        //            //jQuery(this).find('i').toggleClass('icon-minus icon-plus');
+        //        });
+        //    });
+        //}
+        //function _changeInActive() {
+        //    $(function () {
+        //        $('.rptheader').click(function () {
+        //            jQuery(this).find('i').removeClass('icon-minus').addClass('icon-plus');
+        //        });
+        //    });
+        //}
+        //function fixHeader() {
+        //    var t = document.getElementById("repeaterHead");
+        //    var thead = t.getElementsByTagName("thead")[0];
+        //    var t1 = t.cloneNode(false);
+        //    t1.appendChild(thead);
+        //    tableHeader.appendChild(t1)
+        //}
+        //window.onload = fixHeader();
+        function Onscrollfnction() {
+            var div = document.getElementById('Data');
+            var div2 = document.getElementById('HeaderDiv');
+            //var div3 = document.getElementById('HeaderTable');
+            //****** Scrolling HeaderDiv along with DataDiv 
+            //$("#HeaderDiv").css({
+            //    'position': ''
+            //});
+            div2.scrollLeft = div.scrollLeft;
+            //$("#HeaderDiv").css({
+            //    'position': 'fixed'
+            //});
+
+            //div2.scrollTop = 0;
+            //div3.scrollLeft = div.scrollLeft;
+            return false;
+        }
+        function scrollheight() {
+            var div = document.getElementById('Data');
+            var div1 = document.getElementById('HeaderDiv');
+            if (div.scrollHeight > div.clientHeight) {
+                div1.setAttribute("style", "border-right:17px solid #edeff0");
+            }
+            else
+                div1.setAttribute("style", "border-right:none");
+        }
+        function GetNav(id) {
+            var _auth1 = document.getElementById("lbluserhidden");
+            var _auth2 = document.getElementById("lblprjid");
+            parent.document.getElementById("navbar").src = "Navbar?Auth1=" + _auth1.textContent + "&Auth2=" + _auth2.textContent + "&Auth3=" + id;
+
+        }
+
+        function showCalendar(sender, args) {
+            var processingControl = $get(sender._button.id); // Getting the control which triggered the calendar.
+            sender._popupDiv.parentElement.style.top = processingControl.offsetTop + processingControl.height + 'px';
+            sender._popupDiv.parentElement.style.left = processingControl.offsetLeft + 'px';
+
+            var positionTop = (processingControl.height + processingControl.offsetTop) - 85;
+            var positionLeft = processingControl.offsetLeft;
+            var processingParent;
+            var continueLoop = false;
+
+            do {
+                // If the control has parents continue loop.
+                if (processingControl.offsetParent != null) {
+                    processingParent = processingControl.offsetParent;
+                    positionTop += processingParent.offsetTop;
+                    positionLeft += processingParent.offsetLeft;
+                    processingControl = processingParent;
+                    continueLoop = true;
+                }
+                else {
+                    continueLoop = false;
+                }
+            } while (continueLoop);
+
+            //alert(sender._popupDiv.parentElement.style.top);
+            sender._popupDiv.parentElement.style.top = positionTop + 'px';
+            sender._popupDiv.parentElement.style.left = positionLeft + 'px';
+        }
+
+        function ChangeCalendarView(sender, args) {
+            sender._switchMode("years", true);
+        }
+
+        function goclose(pnl) {
+
+            //document.getElementById("txtfolder").value = "";
+            //document.getElementById("txtcode").value = "";
+            $find("ModalPopupExtender1").hide();
+
+        }
+        //function Showpopoup1() 
+        //{
+
+        //    }
+        function Showpopoup() {
+
+            $("#btndummy").click();
+
+        }
+    </script>
+    </form>
+</body>
+</html>

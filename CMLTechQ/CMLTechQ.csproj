@@ -1,0 +1,1595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93C95AB3-4CAA-4161-864D-01A609E67B5F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CMLTechQ</RootNamespace>
+    <AssemblyName>CMLTechQ</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\packages\AjaxControlToolkit.7.1213\lib\45\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin, Version=5.12.5436.22729, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AjaxMin.5.12.5436.22734\lib\net40\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="com.flajaxian.FileUploader">
+      <HintPath>G:\CMLTechQ\CMLTechQ\CMLTechQ\bin\com.flajaxian.FileUploader.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FreeTextBox, Version=3.3.1.12354, Culture=neutral, PublicKeyToken=5962a4e684a48b87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\FTBv3-3-1\Framework-4-0\FreeTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip.Reduced">
+      <HintPath>G:\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration">
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.1.8.0.0\lib\net35-full\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage">
+      <HintPath>..\packages\WindowsAzure.Storage.2.1.0.4\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PassProtection">
+      <HintPath>..\..\CMLT\CMLT\bin\PassProtection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Spatial, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.UI, Version=2014.2.724.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Telerik\UI for ASP.NET AJAX Q2 2014\Bin45\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Telerik\UI for ASP.NET AJAX Q2 2014\Bin45\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+    <Reference Include="Web.Optimization">
+      <HintPath>..\packages\Web.Optimization.0.0.7\lib\net40\Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Web.Optimization.Bundles.AjaxMin">
+      <HintPath>..\packages\Web.Optimization.Bundles.AjaxMin.0.0.8\lib\net40\Web.Optimization.Bundles.AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ADM\Assets\css\accordin.css" />
+    <Content Include="ADM\Assets\css\normalize.css" />
+    <Content Include="ADM\Assets\css\style.css" />
+    <Content Include="ADM\Assets\css\style1.css" />
+    <Content Include="ADM\Assets\img\down.png" />
+    <Content Include="ADM\Assets\img\web-two-style.png" />
+    <Content Include="ADM\Assets\js\jquery-1.3.2.js" />
+    <Content Include="ADM\Assets\js\shortcodes.js" />
+    <Content Include="ADM\Header.aspx" />
+    <Content Include="ADM\Management.aspx" />
+    <Content Include="ADM\User.aspx" />
+    <Content Include="AMS\AssetRegister.aspx" />
+    <Content Include="AMS\css\font-awesome.min.css" />
+    <Content Include="AMS\css\Layout.css" />
+    <Content Include="AMS\fonts\fontawesome-webfont.svg" />
+    <Content Include="AMS\Head.aspx" />
+    <Content Include="AMS\Innernav.aspx" />
+    <Content Include="AMS\Menubar.aspx" />
+    <Content Include="AMS\Newasset.aspx" />
+    <Content Include="AMS\Project.aspx" />
+    <Content Include="Assets\css\03.css" />
+    <Content Include="Assets\css\48.png" />
+    <Content Include="Assets\css\als_demo.css" />
+    <Content Include="Assets\css\button.css" />
+    <Content Include="Assets\css\comment_accordion.css" />
+    <Content Include="Assets\css\common.css" />
+    <Content Include="Assets\css\content.css" />
+    <Content Include="Assets\css\content1.css" />
+    <Content Include="Assets\css\css.css" />
+    <Content Include="Assets\css\dropdown.css" />
+    <Content Include="Assets\css\fileupload.css" />
+    <Content Include="Assets\css\font-awesome.min.css" />
+    <Content Include="Assets\css\font\fontawesome-webfont.svg" />
+    <Content Include="Assets\css\Graph.css" />
+    <Content Include="Assets\css\Layout.min.css" />
+    <Content Include="Assets\css\livegraph.css" />
+    <Content Include="Assets\css\livegraph1.css" />
+    <Content Include="Assets\css\menubar.css" />
+    <Content Include="Assets\css\font\nevis-webfont.svg" />
+    <Content Include="Assets\css\font\stylesheet.css" />
+    <Content Include="Assets\css\Layout.css" />
+    <Content Include="Assets\css\mystyles.css" />
+    <Content Include="Assets\css\Navigation.css" />
+    <Content Include="Assets\css\Navigation1.css" />
+    <Content Include="Assets\css\navslider.css" />
+    <Content Include="Assets\css\OwnStyle.css" />
+    <Content Include="Assets\css\slider.css" />
+    <Content Include="Assets\css\style.css" />
+    <Content Include="Assets\css\StyleView.css" />
+    <Content Include="Assets\css\style\firefix.css" />
+    <Content Include="Assets\css\style\firefix.svg" />
+    <Content Include="Assets\css\style\flat_filled_styles.css" />
+    <Content Include="Assets\css\style\flat_line_styles.css" />
+    <Content Include="Assets\css\style\flat_shadow_styles.css" />
+    <Content Include="Assets\css\style\img\downloads-icon1.png" />
+    <Content Include="Assets\css\style\img\long_shadow%402x.png" />
+    <Content Include="Assets\css\style\img\long_shadow.png" />
+    <Content Include="Assets\css\style\jquery.min.js" />
+    <Content Include="Assets\css\style\page_styles.css" />
+    <Content Include="Assets\css\style\reset.css" />
+    <Content Include="Assets\css\style\social_filled_styles.css" />
+    <Content Include="Assets\css\style\social_line_styles.css" />
+    <Content Include="Assets\css\style\social_shadow_styles.css" />
+    <Content Include="Assets\css\style\svg_inject_flat_icons_filled.js" />
+    <Content Include="Assets\css\style\svg_inject_flat_icons_line.js" />
+    <Content Include="Assets\css\style\svg_inject_flat_icons_shadow.js" />
+    <Content Include="Assets\css\style\svg_inject_scoial_filled.js" />
+    <Content Include="Assets\css\style\svg_inject_scoial_line.js" />
+    <Content Include="Assets\css\style\svg_inject_scoial_shadow.js" />
+    <Content Include="Assets\css\tab.css" />
+    <Content Include="Assets\css\flat_SVGs\browser.svg" />
+    <Content Include="Assets\css\flat_SVGs\brush.svg" />
+    <Content Include="Assets\css\flat_SVGs\calander.svg" />
+    <Content Include="Assets\css\flat_SVGs\camera.svg" />
+    <Content Include="Assets\css\flat_SVGs\clock.svg" />
+    <Content Include="Assets\css\flat_SVGs\coffee.svg" />
+    <Content Include="Assets\css\flat_SVGs\diamond.svg" />
+    <Content Include="Assets\css\flat_SVGs\disk.svg" />
+    <Content Include="Assets\css\flat_SVGs\email.svg" />
+    <Content Include="Assets\css\flat_SVGs\film.svg" />
+    <Content Include="Assets\css\flat_SVGs\flag.svg" />
+    <Content Include="Assets\css\flat_SVGs\folder.svg" />
+    <Content Include="Assets\css\flat_SVGs\graph.svg" />
+    <Content Include="Assets\css\flat_SVGs\heart.svg" />
+    <Content Include="Assets\css\flat_SVGs\home.svg" />
+    <Content Include="Assets\css\flat_SVGs\lightning.svg" />
+    <Content Include="Assets\css\flat_SVGs\location.svg" />
+    <Content Include="Assets\css\flat_SVGs\lock.svg" />
+    <Content Include="Assets\css\flat_SVGs\magnify.svg" />
+    <Content Include="Assets\css\flat_SVGs\message.svg" />
+    <Content Include="Assets\css\flat_SVGs\mic.svg" />
+    <Content Include="Assets\css\flat_SVGs\paper.svg" />
+    <Content Include="Assets\css\flat_SVGs\pencil.svg" />
+    <Content Include="Assets\css\flat_SVGs\phone.svg" />
+    <Content Include="Assets\css\flat_SVGs\picture.svg" />
+    <Content Include="Assets\css\flat_SVGs\plane.svg" />
+    <Content Include="Assets\css\flat_SVGs\present.svg" />
+    <Content Include="Assets\css\flat_SVGs\robot.svg" />
+    <Content Include="Assets\css\flat_SVGs\rocket.svg" />
+    <Content Include="Assets\css\flat_SVGs\screen.svg" />
+    <Content Include="Assets\css\flat_SVGs\settings.svg" />
+    <Content Include="Assets\css\flat_SVGs\spaceship.svg" />
+    <Content Include="Assets\css\flat_SVGs\storm.svg" />
+    <Content Include="Assets\css\flat_SVGs\suitcase.svg" />
+    <Content Include="Assets\css\flat_SVGs\tag.svg" />
+    <Content Include="Assets\css\flat_SVGs\thumbsdown.svg" />
+    <Content Include="Assets\css\flat_SVGs\thumbsup.svg" />
+    <Content Include="Assets\css\flat_SVGs\trash.svg" />
+    <Content Include="Assets\css\flat_SVGs\user.svg" />
+    <Content Include="Assets\css\flat_SVGs\winner.svg" />
+    <Content Include="Assets\css\Telerik.css" />
+    <Content Include="Assets\demo.html" />
+    <Content Include="Assets\img\30.png" />
+    <Content Include="Assets\img\32.png" />
+    <Content Include="Assets\img\48.png" />
+    <Content Include="Assets\img\adobe-icon.png" />
+    <Content Include="Assets\img\adobe-icon1.png" />
+    <Content Include="Assets\img\ajax-loader.gif" />
+    <Content Include="Assets\img\ajax-loader1.gif" />
+    <Content Include="Assets\img\arrow-216-16.png" />
+    <Content Include="Assets\img\arrow-24.png" />
+    <Content Include="Assets\img\arrow.png" />
+    <Content Include="Assets\img\arrow12.png" />
+    <Content Include="Assets\img\arrow6.png" />
+    <Content Include="Assets\img\axis.png" />
+    <Content Include="Assets\img\bar-chart-5-24.png" />
+    <Content Include="Assets\img\cancel-24.png" />
+    <Content Include="Assets\img\chart-icon.png" />
+    <Content Include="Assets\img\check-mark-16.png" />
+    <Content Include="Assets\img\Checks.png" />
+    <Content Include="Assets\img\comments-icon.png" />
+    <Content Include="Assets\img\comments-icon1.png" />
+    <Content Include="Assets\img\database-16.ico" />
+    <Content Include="Assets\img\database-16.png" />
+    <Content Include="Assets\img\default-bg.jpg" />
+    <Content Include="Assets\img\default-bg.png" />
+    <Content Include="Assets\img\delete_.png" />
+    <Content Include="Assets\img\down-arrow.jpg" />
+    <Content Include="Assets\img\download-icon.png" />
+    <Content Include="Assets\img\download-icon1.png" />
+    <Content Include="Assets\img\downloads-20-hov.png" />
+    <Content Include="Assets\img\downloads-20.png" />
+    <Content Include="Assets\img\downloads-24.png" />
+    <Content Include="Assets\img\downloads-icon1.png" />
+    <Content Include="Assets\img\down_arrow.png" />
+    <Content Include="Assets\img\edit-6-16.png" />
+    <Content Include="Assets\img\edit-8-16.png" />
+    <Content Include="Assets\img\edit-8-20-hov.png" />
+    <Content Include="Assets\img\edit-8-20.png" />
+    <Content Include="Assets\img\edit-8-24.png" />
+    <Content Include="Assets\img\expand-16.ico" />
+    <Content Include="Assets\img\expand-24.ico" />
+    <Content Include="Assets\img\h1.png" />
+    <Content Include="Assets\img\h2.png" />
+    <Content Include="Assets\img\h3.png" />
+    <Content Include="Assets\img\inner-logo.jpg" />
+    <Content Include="Assets\img\logo.jpg" />
+    <Content Include="Assets\img\main_bg.jpg" />
+    <Content Include="Assets\img\ok-24.png" />
+    <Content Include="Assets\img\pdf-16.png" />
+    <Content Include="Assets\img\plus.png" />
+    <Content Include="Assets\img\progress-icon.png" />
+    <Content Include="Assets\img\progress-icon1.png" />
+    <Content Include="Assets\img\reports.jpg" />
+    <Content Include="Assets\img\settings-4-16.png" />
+    <Content Include="Assets\img\square-outline-16.png" />
+    <Content Include="Assets\img\stopwatch-24.png" />
+    <Content Include="Assets\img\upbg.jpg" />
+    <Content Include="Assets\img\upbg.png" />
+    <Content Include="Assets\img\update-24.png" />
+    <Content Include="Assets\img\view-icon.png" />
+    <Content Include="Assets\img\view-icons.png" />
+    <Content Include="Assets\img\x-mark-20.png" />
+    <Content Include="Assets\img\x-mark-20_hover.png" />
+    <Content Include="Assets\img\x-mark-24.png" />
+    <Content Include="Assets\img\x.png" />
+    <Content Include="Assets\jquery.min.js" />
+    <Content Include="Assets\js\03.js" />
+    <Content Include="Assets\js\basic.js" />
+    <Content Include="Assets\js\ckeditor.js" />
+    <Content Include="Assets\js\common-scripts.js" />
+    <Content Include="Assets\js\custom.js" />
+    <Content Include="Assets\js\dropdown.js" />
+    <Content Include="Assets\js\jquery-1.3.2.js" />
+    <Content Include="Assets\js\jquery-1.9.1.min.js" />
+    <Content Include="Assets\js\jquery-ui.min.js" />
+    <Content Include="Assets\js\jquery.accordion.js" />
+    <Content Include="Assets\js\jquery.als-1.2.min.js" />
+    <Content Include="Assets\js\jquery.carouFredSel-6.0.4-packed.js" />
+    <Content Include="Assets\js\jquery.js" />
+    <Content Include="Assets\js\jquery.livegraph.js" />
+    <Content Include="Assets\js\jquery.min.js" />
+    <Content Include="Assets\js\jquery.MultiFile.js" />
+    <Content Include="Assets\js\jquery.nicescroll.js" />
+    <Content Include="Assets\js\jquery.simplemodal.js" />
+    <Content Include="Assets\js\jquery.slimscroll.min.js" />
+    <Content Include="Assets\js\jquery.tabs.js" />
+    <Content Include="Assets\js\jquery.tabs.min.js" />
+    <Content Include="Assets\js\plugins.js" />
+    <Content Include="Assets\offcanvas\docs.js" />
+    <Content Include="Assets\offcanvas\uikit.min.js" />
+    <Content Include="Assets\OwnStyle.css" />
+    <Content Include="AuthLogin.aspx" />
+    <Content Include="CloudUpload.aspx" />
+    <Content Include="CMLT.aspx" />
+    <Content Include="CMS\Content.html" />
+    <Content Include="CMS\Head.aspx" />
+    <Content Include="CMS\InnerNav.aspx" />
+    <Content Include="CMS\Menubar.aspx" />
+    <Content Include="CMS\Navbar.aspx" />
+    <Content Include="CMS\P123\CASSummary_Graph.aspx" />
+    <Content Include="CMS\P123\ImportExcel.aspx" />
+    <Content Include="CMS\P123\Reportcms.aspx" />
+    <Content Include="CMS\P123\Schedule_P123_2.aspx" />
+    <Content Include="CMS\P123\Schedule_P123_3.aspx" />
+    <Content Include="CMS\P123\Schedule_P123_5.aspx" />
+    <Content Include="CMS\P123\Summary.aspx" />
+    <Content Include="CMS\Project.aspx" />
+    <Content Include="CMS\Schedule.aspx" />
+    <Content Include="CMS\WebForm1.aspx" />
+    <Content Include="csf\animate.css" />
+    <Content Include="csf\bootstrap.css" />
+    <Content Include="csf\bootstrap.min.css" />
+    <Content Include="csf\style.css" />
+    <Content Include="csf\sweetalert.css" />
+    <Content Include="Default.html" />
+    <Content Include="DMS\blank.html" />
+    <Content Include="CMLT1.aspx" />
+    <Content Include="DMS\CommentList.aspx" />
+    <Content Include="DMS\Content.html" />
+    <Content Include="DMS\dmsuploads1.aspx" />
+    <Content Include="DMS\dms_lib.aspx" />
+    <Content Include="DMS\DMS_Library.aspx" />
+    <Content Include="DMS\DMS_Library_AddNewDoc.aspx" />
+    <Content Include="DMS\DMS_Library_General.aspx" />
+    <Content Include="DMS\DMS_Library_General1.aspx" />
+    <Content Include="DMS\DMS_Library_new.aspx" />
+    <Content Include="DMS\DocumentDownload.aspx" />
+    <Content Include="DMS\DocumentList.aspx" />
+    <Content Include="DMS\DocumentList1.aspx" />
+    <Content Include="DMS\DocumentList2.aspx" />
+    <Content Include="DMS\DocumentList3.aspx" />
+    <Content Include="DMS\DocumentList4.aspx" />
+    <Content Include="DMS\DocumentList_.aspx" />
+    <Content Include="DMS\DocumentMaster.aspx" />
+    <Content Include="DMS\DocumentSchedule2.aspx" />
+    <Content Include="DMS\DocumentSchedule3.aspx" />
+    <Content Include="DMS\DocumentSchedule4.aspx" />
+    <Content Include="DMS\DocumentSchedule5.aspx" />
+    <Content Include="DMS\DocumentSchedule6.aspx" />
+    <Content Include="DMS\DocumentStatusGraph.aspx" />
+    <Content Include="DMS\DocumentStatusGraphDisplay.aspx" />
+    <Content Include="DMS\DocumentStatusRpt.aspx" />
+    <Content Include="DMS\DocumentUpload.aspx" />
+    <Content Include="DMS\DocumentUpload1.aspx" />
+    <Content Include="DMS\DocumentUpload2.aspx" />
+    <Content Include="DMS\DocumentUploadSummary.aspx" />
+    <Content Include="DMS\DocumentUploadSummaryRpt.aspx" />
+    <Content Include="DMS\Docview.aspx" />
+    <Content Include="DMS\DocViewOM.aspx" />
+    <Content Include="DMS\DocViewOther.aspx" />
+    <Content Include="DMS\fileupload.aspx" />
+    <Content Include="DMS\Head.aspx" />
+    <Content Include="DMS\ImageFileUpload.aspx" />
+    <Content Include="DMS\ImageView.aspx" />
+    <Content Include="DMS\InnerNav.aspx" />
+    <Content Include="DMS\Innernav.txt" />
+    <Content Include="DMS\Layer.txt" />
+    <Content Include="DMS\ManualQuickView.aspx" />
+    <Content Include="DMS\ManualQuickViewReportPage.aspx" />
+    <Content Include="DMS\Menubar.aspx" />
+    <Content Include="DMS\MultiUpload.aspx" />
+    <Content Include="DMS\Navbar.aspx" />
+    <Content Include="DMS\Navigation.css" />
+    <Content Include="DMS\NavWebForm1.aspx" />
+    <Content Include="DMS\NavWebForm2.aspx" />
+    <Content Include="DMS\NavWebForm3.aspx" />
+    <Content Include="DMS\NavWebForm4.aspx" />
+    <Content Include="DMS\OandmManaualupload.aspx" />
+    <Content Include="DMS\OandmManaualupload1.aspx" />
+    <Content Include="DMS\offcanvas.html" />
+    <Content Include="DMS\OMCommentList.aspx" />
+    <Content Include="DMS\OMUpload.aspx" />
+    <Content Include="DMS\OMUpload1.aspx" />
+    <Content Include="DMS\OMView.aspx" />
+    <Content Include="DMS\plugins.js" />
+    <Content Include="DMS\ProgressTrackingSheet.aspx" />
+    <Content Include="DMS\ProgressTrackReport.aspx" />
+    <Content Include="DMS\Project.aspx" />
+    <Content Include="DMS\Project1.aspx" />
+    <Content Include="DMS\Project2.aspx" />
+    <Content Include="DMS\pts.aspx" />
+    <Content Include="DMS\pts1.aspx" />
+    <Content Include="DMS\pts_oph.aspx" />
+    <Content Include="DMS\Reports.aspx" />
+    <Content Include="DMS\DocumentSchedule.aspx" />
+    <Content Include="DMS\ScheduleUpload.aspx" />
+    <Content Include="DMS\schedulingsub.aspx" />
+    <Content Include="DMS\Script\Search.aspx" />
+    <Content Include="DMS\Script\search.html" />
+    <Content Include="DMS\Script\search.js" />
+    <Content Include="DMS\Script\settings.js" />
+    <Content Include="DMS\Script\zoom_index.js" />
+    <Content Include="DMS\Script\zoom_pageinfo.js" />
+    <Content Include="DMS\statusUpdate.aspx" />
+    <Content Include="DMS\statusUpdate1.aspx" />
+    <Content Include="DMS\testpage.aspx" />
+    <Content Include="DMS\TreeEdit.aspx" />
+    <Content Include="DMS\UploadBarWindow.aspx" />
+    <Content Include="DMS\UploadSummary.aspx" />
+    <Content Include="DMS\Viewcomments.aspx" />
+    <Content Include="DMS\Viewcomments1.aspx" />
+    <Content Include="DMS\ViewDocument.aspx" />
+    <Content Include="DMS\ViewFullDocument.aspx" />
+    <Content Include="DMS\ViewFullDocument1.aspx" />
+    <Content Include="DMS\ViewManual.aspx" />
+    <Content Include="DMS\ViewManual1.aspx" />
+    <Content Include="DMS\ViewSourceDocument.aspx" />
+    <Content Include="DMS\view_manual.aspx" />
+    <Content Include="DMS\View_Manual1.aspx" />
+    <Content Include="DMS\WebForm1.aspx" />
+    <Content Include="DMS\WebForm2.aspx" />
+    <Content Include="DMS\WebForm3.aspx" />
+    <Content Include="DMS\WebForm4.aspx" />
+    <Content Include="DMS\ViewOM.aspx" />
+    <Content Include="DMS\DocumentGraph.aspx" />
+    <Content Include="DMS\ViewOMManual.aspx" />
+    <Content Include="DMS\WebForm5.aspx" />
+    <Content Include="DMS\WebForm6.aspx" />
+    <Content Include="DMS\WebForm7.aspx" />
+    <Content Include="DMS\Doclist1.aspx" />
+    <Content Include="Editor\content.css" />
+    <Content Include="Editor\tiny_mce.js" />
+    <Content Include="Global.asax" />
+    <Content Include="GraphTest.aspx" />
+    <Content Include="header_img.jpg" />
+    <Content Include="header_img.png" />
+    <Content Include="index.html" />
+    <Content Include="jquery.js" />
+    <Content Include="jsf\bootstrap.min.js" />
+    <Content Include="jsf\CTplusPagination.js" />
+    <Content Include="jsf\Datatable.Responsive.js" />
+    <Content Include="jsf\dataTables.bootstrap.min.js" />
+    <Content Include="jsf\datatables.responsive.min.js" />
+    <Content Include="jsf\dataTables.tableTools.min.js" />
+    <Content Include="jsf\inspinia.js" />
+    <Content Include="jsf\jquery-2.1.1.js" />
+    <Content Include="jsf\jquery.dataTables.min.js" />
+    <Content Include="jsf\jquery.jeditable.js" />
+    <Content Include="jsf\jquery.metisMenu.js" />
+    <Content Include="jsf\jquery.slimscroll.min.js" />
+    <Content Include="jsf\pace.min.js" />
+    <Content Include="jsf\select2.min.js" />
+    <Content Include="jsf\sweetalert.min.js" />
+    <Content Include="Assets\css\menustyle.css" />
+    <Content Include="plugins.js" />
+    <Content Include="scroll.html" />
+    <Content Include="UserLog.aspx" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADM\Header.aspx.cs">
+      <DependentUpon>Header.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADM\Header.aspx.designer.cs">
+      <DependentUpon>Header.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADM\Management.aspx.cs">
+      <DependentUpon>Management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADM\Management.aspx.designer.cs">
+      <DependentUpon>Management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADM\User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADM\User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS\AssetRegister.aspx.cs">
+      <DependentUpon>AssetRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS\AssetRegister.aspx.designer.cs">
+      <DependentUpon>AssetRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS\Head.aspx.cs">
+      <DependentUpon>Head.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS\Head.aspx.designer.cs">
+      <DependentUpon>Head.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS\Innernav.aspx.cs">
+      <DependentUpon>Innernav.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS\Innernav.aspx.designer.cs">
+      <DependentUpon>Innernav.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS\Menubar.aspx.cs">
+      <DependentUpon>Menubar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS\Menubar.aspx.designer.cs">
+      <DependentUpon>Menubar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS\Newasset.aspx.cs">
+      <DependentUpon>Newasset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS\Newasset.aspx.designer.cs">
+      <DependentUpon>Newasset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMS\Project.aspx.cs">
+      <DependentUpon>Project.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMS\Project.aspx.designer.cs">
+      <DependentUpon>Project.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="CloudUpload.aspx.cs">
+      <DependentUpon>CloudUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloudUpload.aspx.designer.cs">
+      <DependentUpon>CloudUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\InnerNav.aspx.cs">
+      <DependentUpon>InnerNav.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMS\InnerNav.aspx.designer.cs">
+      <DependentUpon>InnerNav.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\P123\CASSummary_Graph.aspx.cs">
+      <DependentUpon>CASSummary_Graph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMS\P123\CASSummary_Graph.aspx.designer.cs">
+      <DependentUpon>CASSummary_Graph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\P123\cas_mv.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cas_mv.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CMS\P123\cas_tx.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cas_tx.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CMS\P123\Graph.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Graph.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CMS\P123\Graph123.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Graph123.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CMS\P123\ImportExcel.aspx.cs">
+      <DependentUpon>ImportExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMS\P123\ImportExcel.aspx.designer.cs">
+      <DependentUpon>ImportExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\P123\Reportcms.aspx.cs">
+      <DependentUpon>Reportcms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMS\P123\Reportcms.aspx.designer.cs">
+      <DependentUpon>Reportcms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\P123\Schedule_P123_2.aspx.cs">
+      <DependentUpon>Schedule_P123_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMS\P123\Schedule_P123_2.aspx.designer.cs">
+      <DependentUpon>Schedule_P123_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\P123\Schedule_P123_3.aspx.cs">
+      <DependentUpon>Schedule_P123_3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMS\P123\Schedule_P123_3.aspx.designer.cs">
+      <DependentUpon>Schedule_P123_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\P123\Schedule_P123_5.aspx.cs">
+      <DependentUpon>Schedule_P123_5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMS\P123\Schedule_P123_5.aspx.designer.cs">
+      <DependentUpon>Schedule_P123_5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\P123\Summary.aspx.cs">
+      <DependentUpon>Summary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMS\P123\Summary.aspx.designer.cs">
+      <DependentUpon>Summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMS\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMSReports.Master.cs">
+      <DependentUpon>DMSReports.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMSReports.Master.designer.cs">
+      <DependentUpon>DMSReports.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CMLT1.aspx.cs">
+      <DependentUpon>CMLT1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMLT1.aspx.designer.cs">
+      <DependentUpon>CMLT1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\CommentList.aspx.cs">
+      <DependentUpon>CommentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\CommentList.aspx.designer.cs">
+      <DependentUpon>CommentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\Comments_rpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Comments_rpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DMS\CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DMS\CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DMS\dms.Master.cs">
+      <DependentUpon>dms.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\dms.Master.designer.cs">
+      <DependentUpon>dms.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\dmsuploads1.aspx.cs">
+      <DependentUpon>dmsuploads1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\dmsuploads1.aspx.designer.cs">
+      <DependentUpon>dmsuploads1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\dms_lib.aspx.cs">
+      <DependentUpon>dms_lib.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\dms_lib.aspx.designer.cs">
+      <DependentUpon>dms_lib.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DMS_Library.aspx.cs">
+      <DependentUpon>DMS_Library.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DMS_Library.aspx.designer.cs">
+      <DependentUpon>DMS_Library.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DMS_Library_AddNewDoc.aspx.cs">
+      <DependentUpon>DMS_Library_AddNewDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DMS_Library_AddNewDoc.aspx.designer.cs">
+      <DependentUpon>DMS_Library_AddNewDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DMS_Library_General.aspx.cs">
+      <DependentUpon>DMS_Library_General.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DMS_Library_General.aspx.designer.cs">
+      <DependentUpon>DMS_Library_General.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DMS_Library_General1.aspx.cs">
+      <DependentUpon>DMS_Library_General1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DMS_Library_General1.aspx.designer.cs">
+      <DependentUpon>DMS_Library_General1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DMS_Library_new.aspx.cs">
+      <DependentUpon>DMS_Library_new.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DMS_Library_new.aspx.designer.cs">
+      <DependentUpon>DMS_Library_new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentDownload.aspx.cs">
+      <DependentUpon>DocumentDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentDownload.aspx.designer.cs">
+      <DependentUpon>DocumentDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentList.aspx.cs">
+      <DependentUpon>DocumentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentList.aspx.designer.cs">
+      <DependentUpon>DocumentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentList1.aspx.cs">
+      <DependentUpon>DocumentList1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentList1.aspx.designer.cs">
+      <DependentUpon>DocumentList1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentList2.aspx.cs">
+      <DependentUpon>DocumentList2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentList2.aspx.designer.cs">
+      <DependentUpon>DocumentList2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentList3.aspx.cs">
+      <DependentUpon>DocumentList3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentList3.aspx.designer.cs">
+      <DependentUpon>DocumentList3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentList4.aspx.cs">
+      <DependentUpon>DocumentList4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentList4.aspx.designer.cs">
+      <DependentUpon>DocumentList4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentMaster.aspx.cs">
+      <DependentUpon>DocumentMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentMaster.aspx.designer.cs">
+      <DependentUpon>DocumentMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentSchedule2.aspx.cs">
+      <DependentUpon>DocumentSchedule2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentSchedule2.aspx.designer.cs">
+      <DependentUpon>DocumentSchedule2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentSchedule3.aspx.cs">
+      <DependentUpon>DocumentSchedule3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentSchedule3.aspx.designer.cs">
+      <DependentUpon>DocumentSchedule3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentSchedule4.aspx.cs">
+      <DependentUpon>DocumentSchedule4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentSchedule4.aspx.designer.cs">
+      <DependentUpon>DocumentSchedule4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentSchedule5.aspx.cs">
+      <DependentUpon>DocumentSchedule5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentSchedule5.aspx.designer.cs">
+      <DependentUpon>DocumentSchedule5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentSchedule6.aspx.cs">
+      <DependentUpon>DocumentSchedule6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentSchedule6.aspx.designer.cs">
+      <DependentUpon>DocumentSchedule6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\Documentstatus.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Documentstatus.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentStatusGraph.aspx.cs">
+      <DependentUpon>DocumentStatusGraph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentStatusGraph.aspx.designer.cs">
+      <DependentUpon>DocumentStatusGraph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentStatusGraphDisplay.aspx.cs">
+      <DependentUpon>DocumentStatusGraphDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentStatusGraphDisplay.aspx.designer.cs">
+      <DependentUpon>DocumentStatusGraphDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentStatusRpt.aspx.cs">
+      <DependentUpon>DocumentStatusRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentStatusRpt.aspx.designer.cs">
+      <DependentUpon>DocumentStatusRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentSummaryReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DocumentSummaryReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentUpload.aspx.cs">
+      <DependentUpon>DocumentUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentUpload.aspx.designer.cs">
+      <DependentUpon>DocumentUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentUpload1.aspx.cs">
+      <DependentUpon>DocumentUpload1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentUpload1.aspx.designer.cs">
+      <DependentUpon>DocumentUpload1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentUpload2.aspx.cs">
+      <DependentUpon>DocumentUpload2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentUpload2.aspx.designer.cs">
+      <DependentUpon>DocumentUpload2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentUploadSummary.aspx.cs">
+      <DependentUpon>DocumentUploadSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentUploadSummary.aspx.designer.cs">
+      <DependentUpon>DocumentUploadSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentUploadSummaryRpt.aspx.cs">
+      <DependentUpon>DocumentUploadSummaryRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentUploadSummaryRpt.aspx.designer.cs">
+      <DependentUpon>DocumentUploadSummaryRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocViewOther.aspx.cs">
+      <DependentUpon>DocViewOther.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocViewOther.aspx.designer.cs">
+      <DependentUpon>DocViewOther.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\fileupload.aspx.cs">
+      <DependentUpon>fileupload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\fileupload.aspx.designer.cs">
+      <DependentUpon>fileupload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\Frame1.Master.cs">
+      <DependentUpon>Frame1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\Frame1.Master.designer.cs">
+      <DependentUpon>Frame1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\Handler1.ashx.cs">
+      <DependentUpon>Handler1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\ImageFileUpload.aspx.cs">
+      <DependentUpon>ImageFileUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\ImageFileUpload.aspx.designer.cs">
+      <DependentUpon>ImageFileUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\ImageView.aspx.cs">
+      <DependentUpon>ImageView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\ImageView.aspx.designer.cs">
+      <DependentUpon>ImageView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\InnerNav.aspx.cs">
+      <DependentUpon>InnerNav.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\InnerNav.aspx.designer.cs">
+      <DependentUpon>InnerNav.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\ManualQuickView.aspx.cs">
+      <DependentUpon>ManualQuickView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\ManualQuickView.aspx.designer.cs">
+      <DependentUpon>ManualQuickView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\ManualQuickViewReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManualQuickViewReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DMS\ManualQuickViewReportPage.aspx.cs">
+      <DependentUpon>ManualQuickViewReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\ManualQuickViewReportPage.aspx.designer.cs">
+      <DependentUpon>ManualQuickViewReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\MC1.Master.cs">
+      <DependentUpon>MC1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\MC1.Master.designer.cs">
+      <DependentUpon>MC1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\MultiUpload.aspx.cs">
+      <DependentUpon>MultiUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\MultiUpload.aspx.designer.cs">
+      <DependentUpon>MultiUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\NavWebForm1.aspx.cs">
+      <DependentUpon>NavWebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\NavWebForm1.aspx.designer.cs">
+      <DependentUpon>NavWebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\NavWebForm2.aspx.cs">
+      <DependentUpon>NavWebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\NavWebForm2.aspx.designer.cs">
+      <DependentUpon>NavWebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\NavWebForm3.aspx.cs">
+      <DependentUpon>NavWebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\NavWebForm3.aspx.designer.cs">
+      <DependentUpon>NavWebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\NavWebForm4.aspx.cs">
+      <DependentUpon>NavWebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\NavWebForm4.aspx.designer.cs">
+      <DependentUpon>NavWebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\OandmManaualupload.aspx.cs">
+      <DependentUpon>OandmManaualupload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\OandmManaualupload.aspx.designer.cs">
+      <DependentUpon>OandmManaualupload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\OandmManaualupload1.aspx.cs">
+      <DependentUpon>OandmManaualupload1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\OandmManaualupload1.aspx.designer.cs">
+      <DependentUpon>OandmManaualupload1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\OMCommentList.aspx.cs">
+      <DependentUpon>OMCommentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\OMCommentList.aspx.designer.cs">
+      <DependentUpon>OMCommentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\OMUpload.aspx.cs">
+      <DependentUpon>OMUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\OMUpload.aspx.designer.cs">
+      <DependentUpon>OMUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\OMUpload1.aspx.cs">
+      <DependentUpon>OMUpload1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\OMUpload1.aspx.designer.cs">
+      <DependentUpon>OMUpload1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\OMView.aspx.cs">
+      <DependentUpon>OMView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\OMView.aspx.designer.cs">
+      <DependentUpon>OMView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\ProgressTrackingReport_Oph.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProgressTrackingReport_Oph.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DMS\ProgressTrackingSheet.aspx.cs">
+      <DependentUpon>ProgressTrackingSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\ProgressTrackingSheet.aspx.designer.cs">
+      <DependentUpon>ProgressTrackingSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\ProgressTrackReport.aspx.cs">
+      <DependentUpon>ProgressTrackReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\ProgressTrackReport.aspx.designer.cs">
+      <DependentUpon>ProgressTrackReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\Project1.aspx.cs">
+      <DependentUpon>Project1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\Project1.aspx.designer.cs">
+      <DependentUpon>Project1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\Project2.aspx.cs">
+      <DependentUpon>Project2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\Project2.aspx.designer.cs">
+      <DependentUpon>Project2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\pts.aspx.cs">
+      <DependentUpon>pts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\pts.aspx.designer.cs">
+      <DependentUpon>pts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\pts1.aspx.cs">
+      <DependentUpon>pts1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\pts1.aspx.designer.cs">
+      <DependentUpon>pts1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\pts_oph.aspx.cs">
+      <DependentUpon>pts_oph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\pts_oph.aspx.designer.cs">
+      <DependentUpon>pts_oph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentSchedule.aspx.cs">
+      <DependentUpon>DocumentSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentSchedule.aspx.designer.cs">
+      <DependentUpon>DocumentSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\ScheduleUpload.aspx.cs">
+      <DependentUpon>ScheduleUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\ScheduleUpload.aspx.designer.cs">
+      <DependentUpon>ScheduleUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\schedule_basket.cs" />
+    <Compile Include="DMS\schedulingsub.aspx.cs">
+      <DependentUpon>schedulingsub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\schedulingsub.aspx.designer.cs">
+      <DependentUpon>schedulingsub.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\Script\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\Script\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\statusUpdate.aspx.cs">
+      <DependentUpon>statusUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\statusUpdate.aspx.designer.cs">
+      <DependentUpon>statusUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\statusUpdate1.aspx.cs">
+      <DependentUpon>statusUpdate1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\statusUpdate1.aspx.designer.cs">
+      <DependentUpon>statusUpdate1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\testpage.aspx.cs">
+      <DependentUpon>testpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\testpage.aspx.designer.cs">
+      <DependentUpon>testpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\TreeEdit.aspx.cs">
+      <DependentUpon>TreeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\TreeEdit.aspx.designer.cs">
+      <DependentUpon>TreeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\UploadBarWindow.aspx.cs">
+      <DependentUpon>UploadBarWindow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\UploadBarWindow.aspx.designer.cs">
+      <DependentUpon>UploadBarWindow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\UploadSummary.aspx.cs">
+      <DependentUpon>UploadSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\UploadSummary.aspx.designer.cs">
+      <DependentUpon>UploadSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\Viewcomments.aspx.cs">
+      <DependentUpon>Viewcomments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\Viewcomments.aspx.designer.cs">
+      <DependentUpon>Viewcomments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\Viewcomments1.aspx.cs">
+      <DependentUpon>Viewcomments1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\Viewcomments1.aspx.designer.cs">
+      <DependentUpon>Viewcomments1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\ViewDocument.aspx.cs">
+      <DependentUpon>ViewDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\ViewDocument.aspx.designer.cs">
+      <DependentUpon>ViewDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\ViewFullDocument.aspx.cs">
+      <DependentUpon>ViewFullDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\ViewFullDocument.aspx.designer.cs">
+      <DependentUpon>ViewFullDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\ViewFullDocument1.aspx.cs">
+      <DependentUpon>ViewFullDocument1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\ViewFullDocument1.aspx.designer.cs">
+      <DependentUpon>ViewFullDocument1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\ViewManual.aspx.cs">
+      <DependentUpon>ViewManual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\ViewManual.aspx.designer.cs">
+      <DependentUpon>ViewManual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\ViewManual1.aspx.cs">
+      <DependentUpon>ViewManual1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\ViewManual1.aspx.designer.cs">
+      <DependentUpon>ViewManual1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\ViewSourceDocument.aspx.cs">
+      <DependentUpon>ViewSourceDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\ViewSourceDocument.aspx.designer.cs">
+      <DependentUpon>ViewSourceDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\WebForm4.aspx.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\WebForm4.aspx.designer.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\ViewOM.aspx.cs">
+      <DependentUpon>ViewOM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\ViewOM.aspx.designer.cs">
+      <DependentUpon>ViewOM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentGraph.aspx.cs">
+      <DependentUpon>DocumentGraph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentGraph.aspx.designer.cs">
+      <DependentUpon>DocumentGraph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\ViewOMManual.aspx.cs">
+      <DependentUpon>ViewOMManual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\ViewOMManual.aspx.designer.cs">
+      <DependentUpon>ViewOMManual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\WebForm5.aspx.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\WebForm5.aspx.designer.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\WebForm6.aspx.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\WebForm6.aspx.designer.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\WebForm7.aspx.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\WebForm7.aspx.designer.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\Doclist1.aspx.cs">
+      <DependentUpon>Doclist1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\Doclist1.aspx.designer.cs">
+      <DependentUpon>Doclist1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GraphTest.aspx.cs">
+      <DependentUpon>GraphTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GraphTest.aspx.designer.cs">
+      <DependentUpon>GraphTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="AuthLogin.aspx.cs">
+      <DependentUpon>AuthLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthLogin.aspx.designer.cs">
+      <DependentUpon>AuthLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMLT.aspx.cs">
+      <DependentUpon>CMLT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMLT.aspx.designer.cs">
+      <DependentUpon>CMLT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\Head.aspx.cs">
+      <DependentUpon>Head.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMS\Head.aspx.designer.cs">
+      <DependentUpon>Head.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\Menubar.aspx.cs">
+      <DependentUpon>Menubar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMS\Menubar.aspx.designer.cs">
+      <DependentUpon>Menubar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\Navbar.aspx.cs">
+      <DependentUpon>Navbar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMS\Navbar.aspx.designer.cs">
+      <DependentUpon>Navbar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\Project.aspx.cs">
+      <DependentUpon>Project.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMS\Project.aspx.designer.cs">
+      <DependentUpon>Project.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\Schedule.aspx.cs">
+      <DependentUpon>Schedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMS\Schedule.aspx.designer.cs">
+      <DependentUpon>Schedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocumentList_.aspx.cs">
+      <DependentUpon>DocumentList_.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocumentList_.aspx.designer.cs">
+      <DependentUpon>DocumentList_.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\Docview.aspx.cs">
+      <DependentUpon>Docview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\Docview.aspx.designer.cs">
+      <DependentUpon>Docview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\DocViewOM.aspx.cs">
+      <DependentUpon>DocViewOM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\DocViewOM.aspx.designer.cs">
+      <DependentUpon>DocViewOM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\Head.aspx.cs">
+      <DependentUpon>Head.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\Head.aspx.designer.cs">
+      <DependentUpon>Head.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\Menubar.aspx.cs">
+      <DependentUpon>Menubar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\Menubar.aspx.designer.cs">
+      <DependentUpon>Menubar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\Navbar.aspx.cs">
+      <DependentUpon>Navbar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\Navbar.aspx.designer.cs">
+      <DependentUpon>Navbar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\Project.aspx.cs">
+      <DependentUpon>Project.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\Project.aspx.designer.cs">
+      <DependentUpon>Project.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\view_manual.aspx.cs">
+      <DependentUpon>view_manual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\view_manual.aspx.designer.cs">
+      <DependentUpon>view_manual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMS\View_Manual1.aspx.cs">
+      <DependentUpon>View_Manual1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMS\View_Manual1.aspx.designer.cs">
+      <DependentUpon>View_Manual1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="publicCls.cs" />
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserLog.aspx.cs">
+      <DependentUpon>UserLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLog.aspx.designer.cs">
+      <DependentUpon>UserLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="Assets\css\font\fontawesome-webfont.eot" />
+    <Content Include="Assets\css\font\fontawesome-webfont.ttf" />
+    <Content Include="Assets\css\font\fontawesome-webfont.woff" />
+    <Content Include="Assets\css\font\FontAwesome.otf" />
+    <Content Include="Assets\css\font\nevis-webfont.eot" />
+    <Content Include="Assets\css\font\nevis-webfont.ttf" />
+    <Content Include="Assets\css\font\nevis-webfont.woff" />
+    <Content Include="Assets\css\font\nevis.ttf" />
+    <Content Include="AMS\fonts\fontawesome-webfont.eot" />
+    <Content Include="AMS\fonts\fontawesome-webfont.ttf" />
+    <Content Include="AMS\fonts\fontawesome-webfont.woff" />
+    <Content Include="AMS\fonts\FontAwesome.otf" />
+    <Content Include="DMSReports.Master" />
+    <Content Include="DMS\Frame1.Master" />
+    <Content Include="DMS\dms.Master" />
+    <Content Include="DMS\MC1.Master" />
+    <Content Include="DMS\Handler1.ashx" />
+    <Content Include="DMS\ProgressTrackingReport_Mc12.rpt" />
+    <None Include="Properties\PublishProfiles\DMS.pubxml" />
+    <None Include="Properties\PublishProfiles\Publish.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CMS\P123\cas_mv.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cas_mv.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMS\P123\cas_tx.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cas_tx.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMS\P123\Graph.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Graph.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMS\P123\Graph123.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Graph123.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMS\Comments_rpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Comments_rpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMS\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMS\CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMS\Documentstatus.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Documentstatus.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMS\DocumentSummaryReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DocumentSummaryReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMS\ManualQuickViewReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ManualQuickViewReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMS\ProgressTrackingReport_Oph.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProgressTrackingReport_Oph.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DMSDataAccess\DMSDataAccess.csproj">
+      <Project>{9d5eb817-bee6-47a3-a775-7653e6ce2bf7}</Project>
+      <Name>DMSDataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2496</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2457/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties UseJQuerySupport="False" UseAjaxifiedTemplates="False" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

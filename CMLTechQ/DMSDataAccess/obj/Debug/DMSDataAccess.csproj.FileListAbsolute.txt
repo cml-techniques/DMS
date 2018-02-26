@@ -1,0 +1,10 @@
+D:\CMLT\DMS\DMSDataAccess\bin\Debug\DMSDataAccess.dll
+D:\CMLT\DMS\DMSDataAccess\bin\Debug\DMSDataAccess.pdb
+D:\CMLT\DMS\DMSDataAccess\obj\Debug\DMSDataAccess.dll
+D:\CMLT\DMS\DMSDataAccess\obj\Debug\DMSDataAccess.pdb
+C:\Techniques\Projects\CMLTechQ\Feb152018\CMLTechQ\DMSDataAccess\bin\Debug\DMSDataAccess.dll
+C:\Techniques\Projects\CMLTechQ\Feb152018\CMLTechQ\DMSDataAccess\bin\Debug\DMSDataAccess.pdb
+C:\Techniques\Projects\CMLTechQ\Feb152018\CMLTechQ\DMSDataAccess\obj\Debug\DMSDataAccess.csproj.CoreCompileInputs.cache
+C:\Techniques\Projects\CMLTechQ\Feb152018\CMLTechQ\DMSDataAccess\obj\Debug\DMSDataAccess.dll
+C:\Techniques\Projects\CMLTechQ\Feb152018\CMLTechQ\DMSDataAccess\obj\Debug\DMSDataAccess.pdb
+C:\Techniques\Projects\CMLTechQ\Feb152018\CMLTechQ\DMSDataAccess\obj\Debug\DMSDataAccess.csprojResolveAssemblyReference.cache

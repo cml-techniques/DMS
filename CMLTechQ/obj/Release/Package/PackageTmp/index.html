@@ -1,0 +1,233 @@
+<html>
+<head>
+<title>jQuery LiveGraph Plugin Example</title>
+<!--<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">-->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="Assets/js/jquery.livegraph.js"></script>
+<link rel="stylesheet" type="text/css" href="Assets/css/livegraph.css" />
+</head>
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/chart-graph/Dynamic-Animated-jQuery-Bar-Charts-Plugin-LiveGraph.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="content" style="margin-top:150px;">
+<h1>jQuery LiveGraph Plugin Example</h1>
+</div>
+<div class="content">
+<h1>Demo</h1>
+<p>Here's a quick demonstration of what LiveGraph can do.</p>
+</div>
+<div id="page" class="content">
+<h2>Original Data</h2>
+<div class="controls" style="float:right;width:200px;display:none;">
+<table>
+<tr>
+<td>Animation</td>
+<td><select class="animation">
+<option value="true">On</option>
+<option value="false">Off</option>
+</select></td>
+</tr>
+<tr>
+<td>Anim Time</td>
+<td><input class="animTime" type="text" value="2000" size=5 />
+ms </td>
+</tr>
+<tr>
+<td colspan=2><button class="randomData">Fake Live Data</button></td>
+</tr>
+</table>
+</div>
+<table class="dataforgraph">
+<thead>
+<td>Bar</td>
+<td>Value</td>
+</thead>
+<tr>
+<td>Yes</td>
+<td>100</td>
+</tr>
+<tr>
+<td>No</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Maybe</td>
+<td>30</td>
+</tr>
+
+</table>
+</div>
+<div id="update" class="content" style="display:none;border:solid 1px #808080;">
+<h2>Update Data</h2>
+<table class="updatedata">
+<thead>
+<td>Bar</td>
+<td>Value</td>
+</thead>
+<tbody>
+<tr>
+<td>Yes</td>
+<td>50</td>
+</tr>
+<tr>
+<td>No</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Maybe</td>
+<td>30</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan=2><button class="updateGraph">Update</button></td>
+</tr>
+</tfoot>
+</table>
+</div>
+<script type="text/javascript">
+		<!--
+			$(document).ready(function() {
+			    //$('button.makeGraph').click(function() {
+			    window.onload=(function () {
+					$('#page').liveGraph({
+						height : 350,
+						barWidth : 100,
+						barGapSize : 2,
+						data : 'table.dataforgraph',
+						hideData : true
+					});
+					$('div#update').show();
+					$('#page').data('liveGraph').settings.hideData = false;
+					$('#page h2').html("Graph");
+					$('#page div.controls').show();
+					$('.animation').change(function(){
+						if ($(this).val() == "true") {
+							$('#page').data('liveGraph').settings.animate = true;
+						} else {
+							$('#page').data('liveGraph').settings.animate = false;
+						}
+					});
+					$('.animTime').change(function() {
+						$('#page').data('liveGraph').settings.animTime = parseInt($(this).val());
+					});
+				});
+				$('table.updatedata').find('tbody tr').each(function() {
+					var label = $(this).find('td').first();
+					var oldlab = label.html();
+					var value = $(this).find('td').last();
+					var oldval = value.html();
+					value.html("<input type='text' value='"+oldval+"' />");
+					label.html("<input type='text' value='"+oldlab+"' />");
+				});
+				$('button.updateGraph').click(function() {
+					$('table.updatedata').find('tbody tr').each(function() {
+						var label = $(this).find('td').first();
+						var value = $(this).find('td').last();
+						var val = value.find('input').val();
+						var lab = label.find('input').val();
+						value.html(val);
+						label.html(lab);
+					});
+					$('#page').liveGraph('update', 'table.updatedata');
+					$('table.updatedata').find('tbody tr').each(function() {
+						var label = $(this).find('td').first();
+						var oldlab = label.html();
+						var value = $(this).find('td').last();
+						var oldval = value.html();
+						value.html("<input type='text' value='"+oldval+"' />");
+						label.html("<input type='text' value='"+oldlab+"' />");
+					});
+				});
+				
+				$('button.randomData').click(function() {
+					$(this).attr('disabled','disabled');
+					$(this).html("Cycling random data...");
+					$('#update input, #update button').attr('disabled','disable');
+					setTimeout(function() {
+						//first set of data
+						var updateData = {
+							tb1: {
+								value: 40
+							}
+						};
+						$('#page').liveGraph('update', updateData);
+					}, 500);
+					setTimeout(function() {
+						//second set of data
+						var updateData = {
+							tb3: {
+								value: 70
+							}
+						};
+						$('#page').liveGraph('update', updateData);
+					}, 3000);
+					setTimeout(function() {
+						//third set of data
+						var updateData = {
+							tb2: {
+								value: 100
+							},
+							tb1: 48.7
+						};
+						$('#page').liveGraph('update', updateData);
+					}, 6000);
+					setTimeout(function() {
+						//forth set of data
+						var updateData = {
+							tb3: {
+								value: 12
+							},
+							tb2: 30
+						};
+						$('#page').liveGraph('update', updateData);
+					}, 10000);
+					setTimeout(function() {
+						//fifth set of data - final
+						var updateData = {
+							tb1: {
+								value: 30,
+								label: "Maybe"
+							},
+							tb2: {
+								value: 50,
+								label: "No"
+							},
+							tb3: {
+								value: 50,
+								label: "Yes"
+							}
+						};
+						$('#page').liveGraph('update', updateData);
+						$('#update input, #update button').removeAttr('disabled');
+						$('button.randomData').html("Fake Live Data");
+						$('button.randomData').removeAttr('disabled');
+					}, 13000);
+				});
+				
+			});
+	</script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

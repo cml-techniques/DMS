@@ -1,0 +1,17 @@
+D:\CMLT\DMS\DMSDataAccess\bin\Release\DMSDataAccess.dll
+D:\CMLT\DMS\DMSDataAccess\bin\Release\DMSDataAccess.pdb
+D:\CMLT\DMS\DMSDataAccess\obj\Release\DMSDataAccess.dll
+D:\CMLT\DMS\DMSDataAccess\obj\Release\DMSDataAccess.pdb
+C:\Users\Joseph\Documents\Visual Studio 2013\Projects\CMLTechQ\DMSDataAccess\bin\Release\DMSDataAccess.dll
+C:\Users\Joseph\Documents\Visual Studio 2013\Projects\CMLTechQ\DMSDataAccess\bin\Release\DMSDataAccess.pdb
+C:\Users\Joseph\Documents\Visual Studio 2013\Projects\CMLTechQ\DMSDataAccess\obj\Release\DMSDataAccess.dll
+C:\Users\Joseph\Documents\Visual Studio 2013\Projects\CMLTechQ\DMSDataAccess\obj\Release\DMSDataAccess.pdb
+D:\Projects\Visual Studio 2013\CMLTechQ\DMSDataAccess\bin\Release\DMSDataAccess.dll
+D:\Projects\Visual Studio 2013\CMLTechQ\DMSDataAccess\bin\Release\DMSDataAccess.pdb
+D:\Projects\Visual Studio 2013\CMLTechQ\DMSDataAccess\obj\Release\DMSDataAccess.dll
+D:\Projects\Visual Studio 2013\CMLTechQ\DMSDataAccess\obj\Release\DMSDataAccess.pdb
+C:\Techniques\Projects\CMLTechQ\Feb152018\CMLTechQ\DMSDataAccess\bin\Release\DMSDataAccess.dll
+C:\Techniques\Projects\CMLTechQ\Feb152018\CMLTechQ\DMSDataAccess\bin\Release\DMSDataAccess.pdb
+C:\Techniques\Projects\CMLTechQ\Feb152018\CMLTechQ\DMSDataAccess\obj\Release\DMSDataAccess.csproj.CoreCompileInputs.cache
+C:\Techniques\Projects\CMLTechQ\Feb152018\CMLTechQ\DMSDataAccess\obj\Release\DMSDataAccess.dll
+C:\Techniques\Projects\CMLTechQ\Feb152018\CMLTechQ\DMSDataAccess\obj\Release\DMSDataAccess.pdb

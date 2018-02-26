@@ -1,0 +1,514 @@
+﻿body {
+}
+  .innerbox {
+        display:block;
+        padding:0px;
+        background: rgb(153, 153, 153);
+        background: rgba(153, 153, 153, .7);
+    }
+    .subtitle {
+        display: inline;
+        margin: 0px;
+        color: #ffffff;
+        font-weight: 400;
+        font-size:15px;
+        letter-spacing:0.9px;
+        font-family: 'Open Sans', sans-serif;
+    }
+        .Popsubtitle {
+        display: inline;
+        margin: 0px;
+        color: #000000;
+        font-weight: 400;
+        font-size:15px;
+        letter-spacing:0.9px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .subheader {
+        display: block;
+        padding:0px 10px;
+        margin: 0px;
+        background: rgb(0, 0, 0); /* Fall-back for browsers that don't support rgba */
+        background: rgba(0, 0, 0, .7);
+    }
+       .subbox {
+        display: block;
+        margin: 0px;
+        padding:10px;
+        color: white;
+        font-weight: 400;
+        font-size:15px;
+        letter-spacing:0.9px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+.rptHead {
+   color:white;
+  background-color:#000000;
+    height:30px;
+    font-size:15px;
+}
+.rptItem {
+    color:white;
+    background-color:#999999;
+    font-size:15px;
+}
+    .divContainer {
+    display:block;
+    /*padding:2px 0;*/
+    background-color:#cccccc;
+    opacity:0.7;
+    color:#073763;
+    padding:10px;
+}
+.dvsubhead {
+    background-color:transparent;
+    height:20px;
+    padding:2px;
+    color:#000000;
+    opacity:0.9;
+    font-size:14px;
+    font-family:'Open Sans', sans-serif;
+}
+.tblDocdet {
+    font-family:'Open Sans', sans-serif;
+     font-size:15px;
+     width:100%;
+}
+.lbldocdet {
+     Font-Size:Small;
+     font-weight:bold
+}
+.title {
+    padding:0px;
+    text-align:center;
+    font-weight:bold;
+   color: #073763;
+    margin:5px auto;
+    width:500px;
+     font-size: 14px;
+      font-family: 'Open Sans', sans-serif;
+       display: inline;
+}
+.tds{
+    padding:5px 10px;
+    text-align:center;
+}
+/*
+    Tree Edit (Nav Bar)
+    */
+ #dvpopmain
+{
+position:absolute;
+}
+.pnlpopup
+{
+position:absolute; 
+display:block;
+height:70px;
+width:260px;
+padding-left:5px;
+padding-right:10px ;
+}
+.tblpopoup
+{
+background-color:#195e63;
+height:100%;
+width:250px;
+opacity:0.9;
+}
+.liclose {
+   color:#45818e;
+   font-size: 15px;
+}
+.tblpopoup1
+{
+ padding:2px;
+background-color:#063940;
+height:25px;
+width:250px;
+opacity:0.9;
+}
+.tblbuttons {
+margin-left: auto;
+margin-right: auto;
+}
+.poptext {
+font-size:14px;
+color:#ECE1C3;
+ }
+.header {
+    display:block;
+    padding:10px 10px 10px 10px;
+    margin:0px;
+    height:23px;
+    background: rgb(153, 153, 153); /* Fall-back for browsers that don't support rgba */
+    background: rgb(153, 153, 153);
+    color:#ffffff;
+    font-weight:700;
+    font-family:'Open Sans', sans-serif;
+}
+.title {
+    display: inline;
+    margin: 0px;
+    color: #ffffff;
+    font-size:16px;
+    font-family:'Open Sans', sans-serif;
+}
+.close {
+    font-size:18px;
+    color:#ffffff;
+}
+.popcontent {
+    display:block;
+    position:absolute;
+    padding:10px;
+    margin:0px auto;
+    color:#ffffff;
+    font-weight:600;
+}
+.Mainpopup {
+    padding:0px;
+    margin:0px;
+    position:absolute;
+    left:10%;
+    top:15%;
+   }
+#RightHeader {
+    height:100%;
+    float:right;
+    width:40%;
+}
+.tblright {
+   float:right;
+   height:100%;
+   font-weight:700;
+}
+    #commentSubmit {
+    bottom:10px;
+    width:100%; 
+    position:absolute;
+    left: 0px;
+}
+#btnsubmit {
+    width:100%;
+    background-color:#8EBDB6;
+    border:none;
+    padding:10px;
+    font-size:13px;
+    font-weight:700;
+    text-align:center;
+    color:#ece1c3;
+    margin-top:2px;
+    cursor:pointer;
+    box-shadow:2px 2px #ece1c3;
+    font-family:'Open Sans', sans-serif;
+}
+.dvshadow {
+    width:250px;
+    box-shadow: 0px 0px 4px 3px rgb(6,57,64);
+    /*position: absolute;
+    /*top: 50px;*/
+    /*bottom: 0px;
+    right: 5px;
+    left: 5px;*/
+   }
+#btnsubmit:hover {
+    background-color: #ece1c3;
+    color: #063940;
+}
+    .radioButtonList td
+{
+    vertical-align: top;
+}
+.radioButtonList input[type="radio"]
+{
+    float: left;
+}
+.radioButtonList label
+{
+    
+    display: block;
+}
+/*New styles*/
+#docschedule_area {
+    position: absolute;
+    top: 50px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+.docview {
+    border:none;
+    height:100%;
+    width:100%;
+}
+.Scheduledup-area {
+    display:block;
+    left:0px;
+    top:0px;
+    bottom:30px;
+    right:51%;
+    position:absolute;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+.scheduledlst-area {
+    display: inline-block;
+    top: 0px;
+    left: 50%;
+    right: 0px;
+    bottom: 0px;
+    padding: 5px;
+    position: absolute;
+    overflow: hidden;
+    border-radius:4px;
+    background-color:#dddddd;
+}
+.scheduledoc_con{
+    display:block;
+    top:5px;
+    bottom:5px;
+    left:5px;
+    right:5px;
+    position:absolute;
+    overflow:auto;
+}
+.dvschhead {
+    display:inline-block;
+    top:0px;
+    left:50%;
+    right:5px;
+    height: 20px;
+    padding:5px;
+    position:absolute;
+   background-color:#063940;
+}
+.dvlblhead {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+}
+.ScheduleCount {
+    display:block;
+    left:5px;
+    height: 30px;
+    bottom:0px;
+    right:50%;
+    position:absolute;
+    background: rgb(236,225,195); /* Fall-back for browsers that don't support rgba */
+    background: rgba(236,225,195, .7);
+}
+.dvcounthead {
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.fstatus {
+ width:533px;
+ height:65px;
+ z-index:100;
+ top:50%;
+ position:fixed;
+ left:30%;
+ display:none;
+ border:none;
+        }
+ .Statusubtitle {
+ display: inline;
+ margin: 0px;
+ color: white;
+ font-weight: 400;
+ font-size:15px;
+ letter-spacing:0.9px;
+ font-family: 'Open Sans', sans-serif;
+    }
+.bgViewer {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  border: none;
+  z-index:99;
+  background-color:#000;
+  display:none;
+  filter:alpha(opacity=40);
+  opacity:0.7;
+}
+ .actbtn {
+        border:none;
+        padding:3px;
+        font-size:12px;
+        text-align:center;
+        color:#ffffff;
+        /*width:70px;*/
+        /*margin-top:2px;*/
+    }
+.light {
+    background-color: #999999;
+}
+  #fragraph {
+   height: 100%;
+   width: 100%; 
+   border:none;
+        }
+    #dvGraph{
+    top:82px;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    }
+.newmain {
+    height:100%;
+    color:#ffffff;
+    background-color:black;
+    font-weight:600;
+    font-size:13px;
+    border:none;
+    margin-right:15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.newicon{
+    color: #76a5af;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 15px;
+}
+.Calendar .ajax__calendar_container {
+    border: 1px solid #E0E0E0;
+    background-color: #FAFAFA;
+    width: 200px;
+}
+.Calendar .ajax__calendar_header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: #073763;
+    font-weight: normal;
+    text-shadow: 0px 0px 2px #D3D3D3;
+    height: 20px;
+} 
+.Calendar .ajax__calendar_title,
+.Calendar .ajax__calendar_next,
+.Calendar .ajax__calendar_prev {color: #004080;}
+.Calendar .ajax__calendar_body {
+    width: 175px;
+    height: 240px;
+    position: relative;
+}
+.Calendar .ajax__calendar_dayname {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px #D3D3D3;
+    text-align: center !important;
+    background-color: #EDEDED;
+    border: solid 1px #D3D3D3;
+    /*text-transform: uppercase;*/
+    margin: 1px;
+} 
+.Calendar .ajax__calendar_day {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px #D3D3D3;
+    text-align: center !important;
+    border: solid 1px #E0E0E0;
+    text-transform: uppercase;
+    margin: 1px;
+    width: 17px !important;
+    color: #9F9F9F;
+}
+.Calendar .ajax__calendar_hover .ajax__calendar_day,
+.Calendar .ajax__calendar_hover .ajax__calendar_month,
+.Calendar .ajax__calendar_hover .ajax__calendar_year,
+.Calendar .ajax__calendar_active {
+    color: red; 
+    font-weight: bold; 
+    background-color: #ffffff;
+}
+.Calendar .ajax__calendar_year {
+    border: solid 1px #E0E0E0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px #D3D3D3;
+    text-align: center !important;
+    vertical-align: middle;
+    margin: 1px;
+}
+
+.Calendar .ajax__calendar_month {
+    border: solid 1px #E0E0E0;
+     font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px #D3D3D3;
+    text-align: center !important;
+    vertical-align: middle;
+    margin: 1px;
+}
+
+.Calendar .ajax__calendar_today {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px #D3D3D3;
+    text-align: center !important;
+    margin: 1px;
+    color: #9F9F9F;
+}
+
+.Calendar .ajax__calendar_other {
+    background-color: #E0E0E0;
+    margin: 1px;
+    width: 17px;
+}
+.Calendar .ajax__calendar_footer {
+    width: 175px;
+    border: none;
+    height: 20px;
+    vertical-align: middle;
+    color: #6B6B6B;
+}
+#dvline {
+    background-color:#ffffff;
+    left:0px;
+    right:0px;
+    height:1px;
+    /*position:absolute;*/
+    margin-top:6px; 
+}
+.xaxis {
+padding:0px;
+margin:0px;   
+}
+.xaxis li {
+height: 32px;
+padding: 0px;
+color: #ffffff;
+font-family: 'Open Sans', sans-serif;
+display:block;
+text-align:right;
+}
+.xaxis .dvxline {
+background-color:#cccccc;
+width:103%;
+height:1px;
+}
+.addfile {
+width:90px;
+color:black;
+background-color:#ECE1C3;
+margin-top:5px;
+padding:5px;
+font-family: 'Open Sans', sans-serif;
+}

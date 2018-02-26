@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ProgressTrackingReport" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ProgressTrackingReport">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Folder_id" type="xs:int" minOccurs="0" />
+              <xs:element name="Folder_description" type="xs:string" minOccurs="0" />
+              <xs:element name="Folder_code" type="xs:string" minOccurs="0" />
+              <xs:element name="Progress_id" type="xs:int" minOccurs="0" />
+              <xs:element name="Section1" type="xs:double" minOccurs="0" />
+              <xs:element name="Section2" type="xs:double" minOccurs="0" />
+              <xs:element name="Section3" type="xs:double" minOccurs="0" />
+              <xs:element name="Section4" type="xs:double" minOccurs="0" />
+              <xs:element name="Section5" type="xs:double" minOccurs="0" />
+              <xs:element name="Section6" type="xs:double" minOccurs="0" />
+              <xs:element name="Section7" type="xs:double" minOccurs="0" />
+              <xs:element name="Section8" type="xs:string" minOccurs="0" />
+              <xs:element name="Section9" type="xs:string" minOccurs="0" />
+              <xs:element name="Section10" type="xs:string" minOccurs="0" />
+              <xs:element name="DraftIssueDate" type="xs:string" minOccurs="0" />
+              <xs:element name="Remarks" type="xs:string" minOccurs="0" />
+              <xs:element name="User_id" type="xs:string" minOccurs="0" />
+              <xs:element name="EntryDate" type="xs:string" minOccurs="0" />
+              <xs:element name="Parent_id" type="xs:int" minOccurs="0" />
+              <xs:element name="Parent_name" type="xs:string" minOccurs="0" />
+              <xs:element name="Parent_code" type="xs:string" minOccurs="0" />
+              <xs:element name="Folder_possition1" type="xs:int" minOccurs="0" />
+              <xs:element name="prj_name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
