@@ -1,0 +1,9 @@
+
+*.ide
+*.dll
+
+DMS/packages/*
+DMS/.vs/*
+*.pdb
+*.txt
+*.pp

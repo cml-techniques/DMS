@@ -183,7 +183,7 @@
                     location.replace('CMS/Project?Auth1=' + _auth.textContent + '&Auth2=' + prm);
                 }
                 else if (id == 2) {
-                    if (prm == 33 || prm == 51 || prm == 57 || prm == 76 || prm == 82) {
+                    if (prm == 33 || prm == 51 || prm == 57 || prm == 76 || prm == 82 || prm == 73){
                         location.replace('DMS/Project2?Auth1=' + _auth.textContent + '&Auth2=' + prm);
                     }
                     else

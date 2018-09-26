@@ -113,12 +113,14 @@
         .side-navbar-wrapper1 > ul > li.active a {
             padding-left: 10px;           
         }
-         .side-navbar-wrapper1 > ul > .main-menu-item > a {           
-            width: 85%;
-            text-overflow: ellipsis;
-            height: 20px;
-            padding-right: 5px;
-        }
+    .side-navbar-wrapper1 > ul > .main-menu-item > a {
+        width: 85%;
+        text-overflow: ellipsis;
+        height: 20px;
+        padding-right: 5px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
     /* We apply the link style */
     .side-navbar-wrapper1 ul li a {
         padding: 4px 15px 3px 10px;
