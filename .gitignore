@@ -1,9 +1,8 @@
-
 *.ide
 *.dll
-
-DMS/packages/*
-DMS/.vs/*
+/packages/
+DMSDataAccess/obj/**
+/.vs/*
 *.pdb
 *.txt
 *.pp
