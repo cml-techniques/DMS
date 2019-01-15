@@ -15,3 +15,9 @@ C:\Techniques\Projects\CMLTechQ\Feb152018\CMLTechQ\DMSDataAccess\bin\Release\DMS
 C:\Techniques\Projects\CMLTechQ\Feb152018\CMLTechQ\DMSDataAccess\obj\Release\DMSDataAccess.csproj.CoreCompileInputs.cache
 C:\Techniques\Projects\CMLTechQ\Feb152018\CMLTechQ\DMSDataAccess\obj\Release\DMSDataAccess.dll
 C:\Techniques\Projects\CMLTechQ\Feb152018\CMLTechQ\DMSDataAccess\obj\Release\DMSDataAccess.pdb
+C:\Git\DMS\CMLTechQ\DMSDataAccess\bin\Release\DMSDataAccess.dll
+C:\Git\DMS\CMLTechQ\DMSDataAccess\bin\Release\DMSDataAccess.pdb
+C:\Git\DMS\CMLTechQ\DMSDataAccess\obj\Release\DMSDataAccess.csprojResolveAssemblyReference.cache
+C:\Git\DMS\CMLTechQ\DMSDataAccess\obj\Release\DMSDataAccess.csproj.CoreCompileInputs.cache
+C:\Git\DMS\CMLTechQ\DMSDataAccess\obj\Release\DMSDataAccess.dll
+C:\Git\DMS\CMLTechQ\DMSDataAccess\obj\Release\DMSDataAccess.pdb
