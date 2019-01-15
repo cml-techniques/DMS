@@ -11,7 +11,7 @@
         <%: Styles.Render("~/Content/css") %>
     <style type="text/css">
         #info-box ul li .imgbox a{
-            font-size:50px;
+            font-size:40px;
         }
         #info-box h2.med {
             font-size: 16px;
@@ -23,8 +23,11 @@
             padding-bottom:0px;
         }
         .tabs a {
-            height:40px;
-            line-height:40px;
+            height:35px;
+            line-height:35px;
+        }
+        .tabs{
+            height:auto;
         }
     </style>
 </head>
