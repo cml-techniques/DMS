@@ -9,24 +9,7 @@
     <meta name="author" content="CML Techniques" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <%: Styles.Render("~/Content/css") %>
-    <style type="text/css">
-        #info-box ul li .imgbox a{
-            font-size:50px;
-        }
-        #info-box h2.med {
-            font-size: 16px;
-        }
-        #info-box p {
-            font-size: 11px;
-        }
-        #container{
-            padding-bottom:0px;
-        }
-        .tabs a {
-            height:35px;
-            line-height:35px;
-        }
-    </style>
+         <%: Scripts.Render("~/bundles/scripts") %>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -89,7 +72,7 @@
                             </div>
                             <div class="info">
                                 <h2 class="med">The Latest Browser</h2>
-                                <p>Have you downloaded the latest version of your browser?</p>
+                                <p>Have you douwnloaded the latest version of your browser?</p>
                                 <p class="more"><a href="http://browsehappy.com/" target="_blank">Learn More</a></p>
                             </div>
                         </li>
