@@ -368,7 +368,6 @@
     <Content Include="csf\bootstrap.min.css" />
     <Content Include="csf\style.css" />
     <Content Include="csf\sweetalert.css" />
-    <Content Include="Default.html" />
     <Content Include="CMLT1.aspx" />
     <Content Include="DMS\CommentList.aspx" />
     <Content Include="DMS\dmsuploads1.aspx" />
@@ -466,11 +465,7 @@
     <Content Include="Editor\content.css" />
     <Content Include="Editor\tiny_mce.js" />
     <Content Include="Global.asax" />
-    <Content Include="GraphTest.aspx" />
-    <Content Include="header_img.jpg" />
     <Content Include="header_img.png" />
-    <Content Include="index.html" />
-    <Content Include="jquery.js" />
     <Content Include="jsf\bootstrap.min.js" />
     <Content Include="jsf\CTplusPagination.js" />
     <Content Include="jsf\Datatable.Responsive.js" />
@@ -487,7 +482,6 @@
     <Content Include="jsf\select2.min.js" />
     <Content Include="jsf\sweetalert.min.js" />
     <Content Include="Assets\css\menustyle.css" />
-    <Content Include="plugins.js" />
     <Content Include="UserLog.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">
@@ -1265,13 +1259,6 @@
     </Compile>
     <Compile Include="DMS\WebForm7.aspx.designer.cs">
       <DependentUpon>WebForm7.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GraphTest.aspx.cs">
-      <DependentUpon>GraphTest.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GraphTest.aspx.designer.cs">
-      <DependentUpon>GraphTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="AuthLogin.aspx.cs">
