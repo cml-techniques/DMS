@@ -204,7 +204,7 @@
         </div>
     </form>
 
-    <script src="plugins.js"></script>
+    <script src="../Assets/js/plugins.js"></script>
 
     <script type="text/javascript">
         function _autoAdjust() {

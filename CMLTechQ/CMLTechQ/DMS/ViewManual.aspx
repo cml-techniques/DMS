@@ -236,7 +236,7 @@
             </div>
         </div>
 
-        <script src="plugins.js"></script>
+        <script src="../Assets/js/plugins.js"></script>
         <script type="text/javascript">
             $(function () {
                 setInterval(refreshiframe, 300000);                

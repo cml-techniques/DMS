@@ -511,7 +511,7 @@
                 <%--                                             <asp:Button ID="btnmain" Text="New main" runat="server" Height="100%" BackColor="Black" ForeColor="White" BorderStyle="None" OnClientClick="Showpopoup();" />--%>
             </ContentTemplate>
         </asp:UpdatePanel>
-        <script src="plugins.js"></script>
+        <script src="../Assets/js/plugins.js"></script>
     <script src="../Assets/js/jquery.min.js"></script>
     <script src="../Assets/js/jquery.nicescroll.js"></script>
     <script type="text/javascript">

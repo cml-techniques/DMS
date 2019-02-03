@@ -347,7 +347,6 @@
     <Content Include="Assets\offcanvas\uikit.min.js" />
     <Content Include="Assets\OwnStyle.css" />
     <Content Include="AuthLogin.aspx" />
-    <Content Include="CloudUpload.aspx" />
     <Content Include="CMLT.aspx" />
     <Content Include="CMS\Content.html" />
     <Content Include="CMS\Head.aspx" />
@@ -370,10 +369,8 @@
     <Content Include="csf\style.css" />
     <Content Include="csf\sweetalert.css" />
     <Content Include="Default.html" />
-    <Content Include="DMS\blank.html" />
     <Content Include="CMLT1.aspx" />
     <Content Include="DMS\CommentList.aspx" />
-    <Content Include="DMS\Content.html" />
     <Content Include="DMS\dmsuploads1.aspx" />
     <Content Include="DMS\dms_lib.aspx" />
     <Content Include="DMS\DMS_Library.aspx" />
@@ -388,7 +385,6 @@
     <Content Include="DMS\DocumentList3.aspx" />
     <Content Include="DMS\DocumentList4.aspx" />
     <Content Include="DMS\DocumentList_.aspx" />
-    <Content Include="DMS\DocumentMaster.aspx" />
     <Content Include="DMS\DocumentSchedule2.aspx" />
     <Content Include="DMS\DocumentSchedule3.aspx" />
     <Content Include="DMS\DocumentSchedule4.aspx" />
@@ -410,8 +406,6 @@
     <Content Include="DMS\ImageFileUpload.aspx" />
     <Content Include="DMS\ImageView.aspx" />
     <Content Include="DMS\InnerNav.aspx" />
-    <Content Include="DMS\Innernav.txt" />
-    <Content Include="DMS\Layer.txt" />
     <Content Include="DMS\ManualQuickView.aspx" />
     <Content Include="DMS\ManualQuickViewReportPage.aspx" />
     <Content Include="DMS\Menubar.aspx" />
@@ -425,7 +419,6 @@
     <Content Include="DMS\OandmManaualupload.aspx" />
     <Content Include="DMS\OandmManaualupload1.aspx" />
     <Content Include="DMS\offcanvas.html" />
-    <Content Include="DMS\OMCommentList.aspx" />
     <Content Include="DMS\OMUpload.aspx" />
     <Content Include="DMS\OMUpload1.aspx" />
     <Content Include="DMS\OMView.aspx" />
@@ -450,7 +443,6 @@
     <Content Include="DMS\Script\zoom_pageinfo.js" />
     <Content Include="DMS\statusUpdate.aspx" />
     <Content Include="DMS\statusUpdate1.aspx" />
-    <Content Include="DMS\testpage.aspx" />
     <Content Include="DMS\TreeEdit.aspx" />
     <Content Include="DMS\UploadBarWindow.aspx" />
     <Content Include="DMS\UploadSummary.aspx" />
@@ -463,18 +455,14 @@
     <Content Include="DMS\ViewManual1.aspx" />
     <Content Include="DMS\ViewSourceDocument.aspx" />
     <Content Include="DMS\view_manual.aspx" />
-    <Content Include="DMS\View_Manual1.aspx" />
     <Content Include="DMS\WebForm1.aspx" />
     <Content Include="DMS\WebForm2.aspx" />
     <Content Include="DMS\WebForm3.aspx" />
     <Content Include="DMS\WebForm4.aspx" />
     <Content Include="DMS\ViewOM.aspx" />
-    <Content Include="DMS\DocumentGraph.aspx" />
-    <Content Include="DMS\ViewOMManual.aspx" />
     <Content Include="DMS\WebForm5.aspx" />
     <Content Include="DMS\WebForm6.aspx" />
     <Content Include="DMS\WebForm7.aspx" />
-    <Content Include="DMS\Doclist1.aspx" />
     <Content Include="Editor\content.css" />
     <Content Include="Editor\tiny_mce.js" />
     <Content Include="Global.asax" />
@@ -500,7 +488,6 @@
     <Content Include="jsf\sweetalert.min.js" />
     <Content Include="Assets\css\menustyle.css" />
     <Content Include="plugins.js" />
-    <Content Include="scroll.html" />
     <Content Include="UserLog.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">
@@ -572,13 +559,6 @@
       <DependentUpon>Project.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="CloudUpload.aspx.cs">
-      <DependentUpon>CloudUpload.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CloudUpload.aspx.designer.cs">
-      <DependentUpon>CloudUpload.aspx</DependentUpon>
-    </Compile>
     <Compile Include="CMS\InnerNav.aspx.cs">
       <DependentUpon>InnerNav.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -802,13 +782,6 @@
     </Compile>
     <Compile Include="DMS\DocumentList4.aspx.designer.cs">
       <DependentUpon>DocumentList4.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DMS\DocumentMaster.aspx.cs">
-      <DependentUpon>DocumentMaster.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\DocumentMaster.aspx.designer.cs">
-      <DependentUpon>DocumentMaster.aspx</DependentUpon>
     </Compile>
     <Compile Include="DMS\DocumentSchedule2.aspx.cs">
       <DependentUpon>DocumentSchedule2.aspx</DependentUpon>
@@ -1034,13 +1007,6 @@
     <Compile Include="DMS\OandmManaualupload1.aspx.designer.cs">
       <DependentUpon>OandmManaualupload1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DMS\OMCommentList.aspx.cs">
-      <DependentUpon>OMCommentList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\OMCommentList.aspx.designer.cs">
-      <DependentUpon>OMCommentList.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DMS\OMUpload.aspx.cs">
       <DependentUpon>OMUpload.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1167,13 +1133,6 @@
     <Compile Include="DMS\statusUpdate1.aspx.designer.cs">
       <DependentUpon>statusUpdate1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DMS\testpage.aspx.cs">
-      <DependentUpon>testpage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\testpage.aspx.designer.cs">
-      <DependentUpon>testpage.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DMS\TreeEdit.aspx.cs">
       <DependentUpon>TreeEdit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1286,20 +1245,6 @@
     <Compile Include="DMS\ViewOM.aspx.designer.cs">
       <DependentUpon>ViewOM.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DMS\DocumentGraph.aspx.cs">
-      <DependentUpon>DocumentGraph.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\DocumentGraph.aspx.designer.cs">
-      <DependentUpon>DocumentGraph.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DMS\ViewOMManual.aspx.cs">
-      <DependentUpon>ViewOMManual.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\ViewOMManual.aspx.designer.cs">
-      <DependentUpon>ViewOMManual.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DMS\WebForm5.aspx.cs">
       <DependentUpon>WebForm5.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1320,13 +1265,6 @@
     </Compile>
     <Compile Include="DMS\WebForm7.aspx.designer.cs">
       <DependentUpon>WebForm7.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DMS\Doclist1.aspx.cs">
-      <DependentUpon>Doclist1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\Doclist1.aspx.designer.cs">
-      <DependentUpon>Doclist1.aspx</DependentUpon>
     </Compile>
     <Compile Include="GraphTest.aspx.cs">
       <DependentUpon>GraphTest.aspx</DependentUpon>
@@ -1441,24 +1379,10 @@
     <Compile Include="DMS\view_manual.aspx.designer.cs">
       <DependentUpon>view_manual.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DMS\View_Manual1.aspx.cs">
-      <DependentUpon>View_Manual1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\View_Manual1.aspx.designer.cs">
-      <DependentUpon>View_Manual1.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="publicCls.cs" />
-    <Compile Include="Site.Mobile.Master.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site.Mobile.Master.designer.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
-    </Compile>
     <Compile Include="UserLog.aspx.cs">
       <DependentUpon>UserLog.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1476,7 +1400,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="Site.Mobile.Master" />
     <Content Include="Assets\css\font\fontawesome-webfont.eot" />
     <Content Include="Assets\css\font\fontawesome-webfont.ttf" />
     <Content Include="Assets\css\font\fontawesome-webfont.woff" />
