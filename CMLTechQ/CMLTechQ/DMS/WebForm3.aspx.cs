@@ -948,19 +948,15 @@ namespace CMLTechQ.DMS
             string _redirect = "";
             if (docviewcomment)
             {
-                //Response.Redirect("OMView?Auth1=" + lbluseridhidden.Text + "&Auth2=" + lblprjid.Text + "&Auth3=" + lblfolder.Text + "&Auth4=" + hdocid.Value + "&Auth5=" + hfile.Value);
                 _redirect = "ViewManual?Auth1=" + lbluseridhidden.Text + "&Auth2=" + lblprjid.Text + "&Auth3=" + lblfolder.Text + "&Auth4=" + hdocid.Value + "&Auth5=" + hfile.Value;
-                //string _redirect = "ViewOM?Auth1=" + lbluseridhidden.Text + "&Auth2=" + lblprjid.Text + "&Auth3=" + lblfolder.Text + "&Auth4=" + hdocid.Value + "&Auth5=" + hfile.Value;
-                //string _redirect = "ViewDocument?Auth1=" + lbluseridhidden.Text + "&Auth2=" + lblprjid.Text + "&Auth3=" + lblfolder.Text + "&Auth4=" + hdocid.Value + "&Auth5=" + hfile.Value;
-                //string _redirect = "OMView?Auth1=" + lbluseridhidden.Text + "&Auth2=" + lblprjid.Text + "&Auth3=" + lblfolder.Text + "&Auth4=" + hdocid.Value + "&Auth5=" + hfile.Value;
-                ScriptManager.RegisterStartupScript(this, typeof(string), "close", "parent.location.replace('" + _redirect + "');", true);
+               ScriptManager.RegisterStartupScript(this, typeof(string), "close", "parent.location.replace('" + _redirect + "');", true);
             }
             else
             {
                 _redirect = "ViewFullDocument?Auth1=" + lbluseridhidden.Text + "&Auth2=" + lblprjid.Text + "&Auth3=" + lblfolder.Text + "&Auth4=" + hdocid.Value + "&Auth5=" + hfile.Value;
             }
             ScriptManager.RegisterStartupScript(this, typeof(string), "close", "parent.location.replace('" + _redirect + "');", true);
-            //Response.Redirect("Docview?Id=" + hdocid.Value + "&File=" + hfile.Value + "&source=1");
+            
         }
         protected void liststatus_SelectedIndexChanged(object sender, EventArgs e)
         {

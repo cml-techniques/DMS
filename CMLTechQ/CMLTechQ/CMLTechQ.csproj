@@ -145,9 +145,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ADM\Assets\css\accordin.css" />
-    <Content Include="ADM\Assets\css\normalize.css" />
     <Content Include="ADM\Assets\css\style.css" />
-    <Content Include="ADM\Assets\css\style1.css" />
     <Content Include="ADM\Assets\img\down.png" />
     <Content Include="ADM\Assets\img\web-two-style.png" />
     <Content Include="ADM\Assets\js\jquery-1.3.2.js" />
@@ -264,7 +262,6 @@
     <Content Include="csf\sweetalert.css" />
     <Content Include="CMLT1.aspx" />
     <Content Include="DMS\CommentList.aspx" />
-    <Content Include="DMS\dmsuploads1.aspx" />
     <Content Include="DMS\DMS_Library.aspx" />
     <Content Include="DMS\DMS_Library_AddNewDoc.aspx" />
     <Content Include="DMS\DMS_Library_General.aspx" />
@@ -275,8 +272,6 @@
     <Content Include="DMS\DocumentList1.aspx" />
     <Content Include="DMS\DocumentList2.aspx" />
     <Content Include="DMS\DocumentList3.aspx" />
-    <Content Include="DMS\DocumentList4.aspx" />
-    <Content Include="DMS\DocumentList_.aspx" />
     <Content Include="DMS\DocumentSchedule2.aspx" />
     <Content Include="DMS\DocumentSchedule3.aspx" />
     <Content Include="DMS\DocumentSchedule4.aspx" />
@@ -288,33 +283,23 @@
     <Content Include="DMS\DocumentUpload.aspx" />
     <Content Include="DMS\DocumentUpload1.aspx" />
     <Content Include="DMS\DocumentUpload2.aspx" />
-    <Content Include="DMS\DocumentUploadSummary.aspx" />
     <Content Include="DMS\DocumentUploadSummaryRpt.aspx" />
     <Content Include="DMS\Docview.aspx" />
-    <Content Include="DMS\DocViewOM.aspx" />
     <Content Include="DMS\DocViewOther.aspx" />
-    <Content Include="DMS\fileupload.aspx" />
     <Content Include="DMS\Head.aspx" />
-    <Content Include="DMS\ImageFileUpload.aspx" />
     <Content Include="DMS\ImageView.aspx" />
     <Content Include="DMS\InnerNav.aspx" />
     <Content Include="DMS\ManualQuickView.aspx" />
     <Content Include="DMS\ManualQuickViewReportPage.aspx" />
     <Content Include="DMS\Menubar.aspx" />
-    <Content Include="DMS\MultiUpload.aspx" />
     <Content Include="DMS\Navbar.aspx" />
-    <Content Include="DMS\Navigation.css" />
     <Content Include="DMS\NavWebForm1.aspx" />
     <Content Include="DMS\NavWebForm2.aspx" />
     <Content Include="DMS\NavWebForm3.aspx" />
     <Content Include="DMS\NavWebForm4.aspx" />
-    <Content Include="DMS\OandmManaualupload.aspx" />
-    <Content Include="DMS\OandmManaualupload1.aspx" />
     <Content Include="DMS\offcanvas.html" />
     <Content Include="DMS\OMUpload.aspx" />
     <Content Include="DMS\OMUpload1.aspx" />
-    <Content Include="DMS\OMView.aspx" />
-    <Content Include="DMS\plugins.js" />
     <Content Include="DMS\ProgressTrackingSheet.aspx" />
     <Content Include="DMS\ProgressTrackReport.aspx" />
     <Content Include="DMS\Project.aspx" />
@@ -325,8 +310,6 @@
     <Content Include="DMS\pts_oph.aspx" />
     <Content Include="DMS\Reports.aspx" />
     <Content Include="DMS\DocumentSchedule.aspx" />
-    <Content Include="DMS\ScheduleUpload.aspx" />
-    <Content Include="DMS\schedulingsub.aspx" />
     <Content Include="DMS\Script\Search.aspx" />
     <Content Include="DMS\Script\search.html" />
     <Content Include="DMS\Script\search.js" />
@@ -335,30 +318,24 @@
     <Content Include="DMS\Script\zoom_pageinfo.js" />
     <Content Include="DMS\statusUpdate.aspx" />
     <Content Include="DMS\statusUpdate1.aspx" />
-    <Content Include="DMS\TreeEdit.aspx" />
     <Content Include="DMS\UploadBarWindow.aspx" />
     <Content Include="DMS\UploadSummary.aspx" />
     <Content Include="DMS\Viewcomments.aspx" />
     <Content Include="DMS\Viewcomments1.aspx" />
-    <Content Include="DMS\ViewDocument.aspx" />
     <Content Include="DMS\ViewFullDocument.aspx" />
     <Content Include="DMS\ViewFullDocument1.aspx" />
     <Content Include="DMS\ViewManual.aspx" />
     <Content Include="DMS\ViewManual1.aspx" />
     <Content Include="DMS\ViewSourceDocument.aspx" />
-    <Content Include="DMS\view_manual.aspx" />
     <Content Include="DMS\WebForm1.aspx" />
     <Content Include="DMS\WebForm2.aspx" />
     <Content Include="DMS\WebForm3.aspx" />
     <Content Include="DMS\WebForm4.aspx" />
-    <Content Include="DMS\ViewOM.aspx" />
     <Content Include="DMS\WebForm5.aspx" />
     <Content Include="DMS\WebForm6.aspx" />
-    <Content Include="DMS\WebForm7.aspx" />
     <Content Include="Editor\content.css" />
     <Content Include="Editor\tiny_mce.js" />
     <Content Include="Global.asax" />
-    <Content Include="header_img.png" />
     <Content Include="jsf\bootstrap.min.js" />
     <Content Include="jsf\CTplusPagination.js" />
     <Content Include="jsf\Datatable.Responsive.js" />
@@ -371,7 +348,6 @@
     <Content Include="jsf\jquery.metisMenu.js" />
     <Content Include="jsf\jquery.slimscroll.min.js" />
     <Content Include="jsf\pace.min.js" />
-    <Content Include="jsf\select2.min.js" />
     <Content Include="jsf\sweetalert.min.js" />
     <Content Include="Assets\css\menustyle.css" />
     <Content Include="UserLog.aspx" />
@@ -451,31 +427,12 @@
       <DependentUpon>Comments_rpt.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="DMS\CrystalReport1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport1.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="DMS\CrystalReport2.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport2.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="DMS\dms.Master.cs">
       <DependentUpon>dms.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DMS\dms.Master.designer.cs">
       <DependentUpon>dms.Master</DependentUpon>
-    </Compile>
-    <Compile Include="DMS\dmsuploads1.aspx.cs">
-      <DependentUpon>dmsuploads1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\dmsuploads1.aspx.designer.cs">
-      <DependentUpon>dmsuploads1.aspx</DependentUpon>
     </Compile>
     <Compile Include="DMS\DMS_Library.aspx.cs">
       <DependentUpon>DMS_Library.aspx</DependentUpon>
@@ -546,13 +503,6 @@
     </Compile>
     <Compile Include="DMS\DocumentList3.aspx.designer.cs">
       <DependentUpon>DocumentList3.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DMS\DocumentList4.aspx.cs">
-      <DependentUpon>DocumentList4.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\DocumentList4.aspx.designer.cs">
-      <DependentUpon>DocumentList4.aspx</DependentUpon>
     </Compile>
     <Compile Include="DMS\DocumentSchedule2.aspx.cs">
       <DependentUpon>DocumentSchedule2.aspx</DependentUpon>
@@ -643,13 +593,6 @@
     <Compile Include="DMS\DocumentUpload2.aspx.designer.cs">
       <DependentUpon>DocumentUpload2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DMS\DocumentUploadSummary.aspx.cs">
-      <DependentUpon>DocumentUploadSummary.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\DocumentUploadSummary.aspx.designer.cs">
-      <DependentUpon>DocumentUploadSummary.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DMS\DocumentUploadSummaryRpt.aspx.cs">
       <DependentUpon>DocumentUploadSummaryRpt.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -664,13 +607,6 @@
     <Compile Include="DMS\DocViewOther.aspx.designer.cs">
       <DependentUpon>DocViewOther.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DMS\fileupload.aspx.cs">
-      <DependentUpon>fileupload.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\fileupload.aspx.designer.cs">
-      <DependentUpon>fileupload.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DMS\Frame1.Master.cs">
       <DependentUpon>Frame1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -680,13 +616,6 @@
     </Compile>
     <Compile Include="DMS\Handler1.ashx.cs">
       <DependentUpon>Handler1.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="DMS\ImageFileUpload.aspx.cs">
-      <DependentUpon>ImageFileUpload.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\ImageFileUpload.aspx.designer.cs">
-      <DependentUpon>ImageFileUpload.aspx</DependentUpon>
     </Compile>
     <Compile Include="DMS\ImageView.aspx.cs">
       <DependentUpon>ImageView.aspx</DependentUpon>
@@ -729,13 +658,6 @@
     <Compile Include="DMS\MC1.Master.designer.cs">
       <DependentUpon>MC1.Master</DependentUpon>
     </Compile>
-    <Compile Include="DMS\MultiUpload.aspx.cs">
-      <DependentUpon>MultiUpload.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\MultiUpload.aspx.designer.cs">
-      <DependentUpon>MultiUpload.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DMS\NavWebForm1.aspx.cs">
       <DependentUpon>NavWebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -764,20 +686,6 @@
     <Compile Include="DMS\NavWebForm4.aspx.designer.cs">
       <DependentUpon>NavWebForm4.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DMS\OandmManaualupload.aspx.cs">
-      <DependentUpon>OandmManaualupload.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\OandmManaualupload.aspx.designer.cs">
-      <DependentUpon>OandmManaualupload.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DMS\OandmManaualupload1.aspx.cs">
-      <DependentUpon>OandmManaualupload1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\OandmManaualupload1.aspx.designer.cs">
-      <DependentUpon>OandmManaualupload1.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DMS\OMUpload.aspx.cs">
       <DependentUpon>OMUpload.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -791,13 +699,6 @@
     </Compile>
     <Compile Include="DMS\OMUpload1.aspx.designer.cs">
       <DependentUpon>OMUpload1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DMS\OMView.aspx.cs">
-      <DependentUpon>OMView.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\OMView.aspx.designer.cs">
-      <DependentUpon>OMView.aspx</DependentUpon>
     </Compile>
     <Compile Include="DMS\ProgressTrackingReport_Oph.cs">
       <AutoGen>True</AutoGen>
@@ -868,21 +769,7 @@
     <Compile Include="DMS\DocumentSchedule.aspx.designer.cs">
       <DependentUpon>DocumentSchedule.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DMS\ScheduleUpload.aspx.cs">
-      <DependentUpon>ScheduleUpload.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\ScheduleUpload.aspx.designer.cs">
-      <DependentUpon>ScheduleUpload.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DMS\schedule_basket.cs" />
-    <Compile Include="DMS\schedulingsub.aspx.cs">
-      <DependentUpon>schedulingsub.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\schedulingsub.aspx.designer.cs">
-      <DependentUpon>schedulingsub.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DMS\Script\Search.aspx.cs">
       <DependentUpon>Search.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -903,13 +790,6 @@
     </Compile>
     <Compile Include="DMS\statusUpdate1.aspx.designer.cs">
       <DependentUpon>statusUpdate1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DMS\TreeEdit.aspx.cs">
-      <DependentUpon>TreeEdit.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\TreeEdit.aspx.designer.cs">
-      <DependentUpon>TreeEdit.aspx</DependentUpon>
     </Compile>
     <Compile Include="DMS\UploadBarWindow.aspx.cs">
       <DependentUpon>UploadBarWindow.aspx</DependentUpon>
@@ -938,13 +818,6 @@
     </Compile>
     <Compile Include="DMS\Viewcomments1.aspx.designer.cs">
       <DependentUpon>Viewcomments1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DMS\ViewDocument.aspx.cs">
-      <DependentUpon>ViewDocument.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\ViewDocument.aspx.designer.cs">
-      <DependentUpon>ViewDocument.aspx</DependentUpon>
     </Compile>
     <Compile Include="DMS\ViewFullDocument.aspx.cs">
       <DependentUpon>ViewFullDocument.aspx</DependentUpon>
@@ -1009,13 +882,6 @@
     <Compile Include="DMS\WebForm4.aspx.designer.cs">
       <DependentUpon>WebForm4.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DMS\ViewOM.aspx.cs">
-      <DependentUpon>ViewOM.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\ViewOM.aspx.designer.cs">
-      <DependentUpon>ViewOM.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DMS\WebForm5.aspx.cs">
       <DependentUpon>WebForm5.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1029,13 +895,6 @@
     </Compile>
     <Compile Include="DMS\WebForm6.aspx.designer.cs">
       <DependentUpon>WebForm6.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DMS\WebForm7.aspx.cs">
-      <DependentUpon>WebForm7.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\WebForm7.aspx.designer.cs">
-      <DependentUpon>WebForm7.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="AuthLogin.aspx.cs">
@@ -1052,26 +911,12 @@
     <Compile Include="CMLT.aspx.designer.cs">
       <DependentUpon>CMLT.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DMS\DocumentList_.aspx.cs">
-      <DependentUpon>DocumentList_.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\DocumentList_.aspx.designer.cs">
-      <DependentUpon>DocumentList_.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DMS\Docview.aspx.cs">
       <DependentUpon>Docview.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DMS\Docview.aspx.designer.cs">
       <DependentUpon>Docview.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DMS\DocViewOM.aspx.cs">
-      <DependentUpon>DocViewOM.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\DocViewOM.aspx.designer.cs">
-      <DependentUpon>DocViewOM.aspx</DependentUpon>
     </Compile>
     <Compile Include="DMS\Head.aspx.cs">
       <DependentUpon>Head.aspx</DependentUpon>
@@ -1100,13 +945,6 @@
     </Compile>
     <Compile Include="DMS\Project.aspx.designer.cs">
       <DependentUpon>Project.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DMS\view_manual.aspx.cs">
-      <DependentUpon>view_manual.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\view_manual.aspx.designer.cs">
-      <DependentUpon>view_manual.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1160,14 +998,6 @@
     <EmbeddedResource Include="DMS\Comments_rpt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Comments_rpt.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DMS\CrystalReport1.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DMS\CrystalReport2.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="DMS\Documentstatus.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

@@ -634,15 +634,6 @@
             document.getElementById("hfile").value = _file;
             document.getElementById("hreview").value = _review;
             document.getElementById("hdocid").value = _id;
-
-            //    if (_review == 'True') {
-            //        parent.document.getElementById("content").src = "OMView?Auth1=" + _auth1.textContent + "&Auth2=" + _auth2.textContent + "&Auth3=" + _auth3.textContent + "&Auth4=" + _id + "&Auth5=" + _file;
-
-            //    }else
-            //        parent.document.getElementById("content").src = "Docview?Id=" + _id + "&File=" + _file;
-
-            //}
-
             $("#btndummyView").click();
             //parent.expand();
         }

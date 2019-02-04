@@ -613,26 +613,7 @@
             document.getElementById("<%=hfile.ClientID %>").value = _file;
             document.getElementById("<%=hreview.ClientID %>").value = _review;
             document.getElementById("<%=hdocid.ClientID %>").value = _id;
-
-            //    if (_review == 'True') {
-            //        parent.document.getElementById("content").src = "OMView?Auth1=" + _auth1.textContent + "&Auth2=" + _auth2.textContent + "&Auth3=" + _auth3.textContent + "&Auth4=" + _id + "&Auth5=" + _file;
-
-            //    }else
-            //        parent.document.getElementById("content").src = "Docview?Id=" + _id + "&File=" + _file;
-
-            //}
-
             $("#<%=btndummyView.ClientID %>").click();
-            //parent.expand();
-        }
-        //function downloadall() {
-        //    $("#Butnbtndownloadall").click(); 
-
-        //}
-        //function deleteall() {
-        //    $("#btndeleteall").click(); 
-
-        //}
 
     </script>
     <script type="text/javascript">

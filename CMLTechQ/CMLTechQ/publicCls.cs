@@ -44,17 +44,20 @@ namespace publicCls
         {
             try
             {
-                SmtpClient _myclient = new SmtpClient("mail.cmltechniques.com");
-                _myclient.EnableSsl = false;
-                _myclient.Port = 25;
-                _myclient.Credentials = new System.Net.NetworkCredential("admin@cmltechniques.com", "Admin@123");
-                MailMessage msg = new MailMessage();
-                msg.From = new MailAddress("\"CML Techniques\"  <admin@cmltechniques.com>");
-                msg.To.Add(new MailAddress(_toAddress));
-                msg.Priority = MailPriority.High;
-                msg.Subject = _Subject;
-                msg.Body = _Body;
-                _myclient.Send(msg);
+                if (System.Configuration.ConfigurationManager.AppSettings["environment"] == "server")
+                {
+                    SmtpClient _myclient = new SmtpClient("mail.cmltechniques.com");
+                    _myclient.EnableSsl = false;
+                    _myclient.Port = 25;
+                    _myclient.Credentials = new System.Net.NetworkCredential("admin@cmltechniques.com", "Admin@123");
+                    MailMessage msg = new MailMessage();
+                    msg.From = new MailAddress("\"CML Techniques\"  <admin@cmltechniques.com>");
+                    msg.To.Add(new MailAddress(_toAddress));
+                    msg.Priority = MailPriority.High;
+                    msg.Subject = _Subject;
+                    msg.Body = _Body;
+                    _myclient.Send(msg);
+                }                    
             }
             catch (Exception ex)
             {
@@ -65,18 +68,21 @@ namespace publicCls
         {
             try
             {
-                SmtpClient _myclient = new SmtpClient("mail.cmltechniques.com");
-                _myclient.EnableSsl = false;
-                _myclient.Port = 25;
-                _myclient.Credentials = new System.Net.NetworkCredential("admin@cmltechniques.com", "Admin@123");
-                MailMessage msg = new MailMessage();
-                msg.From = new MailAddress("\"CML Techniques\"  <admin@cmltechniques.com>");
-                msg.To.Add(new MailAddress(_toAddress));
-                msg.Priority = MailPriority.High;
-                msg.Subject = _Subject;
-                msg.IsBodyHtml = true;
-                msg.Body = _Body;
-                _myclient.Send(msg);
+                if (System.Configuration.ConfigurationManager.AppSettings["environment"] == "server")
+                {
+                    SmtpClient _myclient = new SmtpClient("mail.cmltechniques.com");
+                    _myclient.EnableSsl = false;
+                    _myclient.Port = 25;
+                    _myclient.Credentials = new System.Net.NetworkCredential("admin@cmltechniques.com", "Admin@123");
+                    MailMessage msg = new MailMessage();
+                    msg.From = new MailAddress("\"CML Techniques\"  <admin@cmltechniques.com>");
+                    msg.To.Add(new MailAddress(_toAddress));
+                    msg.Priority = MailPriority.High;
+                    msg.Subject = _Subject;
+                    msg.IsBodyHtml = true;
+                    msg.Body = _Body;
+                    _myclient.Send(msg);
+                }                    
             }
             catch (Exception ex)
             {
