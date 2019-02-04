@@ -152,25 +152,16 @@
     <Content Include="ADM\Assets\img\web-two-style.png" />
     <Content Include="ADM\Assets\js\jquery-1.3.2.js" />
     <Content Include="ADM\Assets\js\shortcodes.js" />
-    <Content Include="ADM\Header.aspx" />
-    <Content Include="ADM\Management.aspx" />
     <Content Include="ADM\User.aspx" />
     <Content Include="AMS\AssetRegister.aspx" />
     <Content Include="AMS\css\font-awesome.min.css" />
     <Content Include="AMS\css\Layout.css" />
     <Content Include="AMS\fonts\fontawesome-webfont.svg" />
     <Content Include="AMS\Head.aspx" />
-    <Content Include="AMS\Innernav.aspx" />
     <Content Include="AMS\Menubar.aspx" />
     <Content Include="AMS\Newasset.aspx" />
     <Content Include="AMS\Project.aspx" />
-    <Content Include="Assets\css\03.css" />
-    <Content Include="Assets\css\48.png" />
-    <Content Include="Assets\css\als_demo.css" />
     <Content Include="Assets\css\button.css" />
-    <Content Include="Assets\css\comment_accordion.css" />
-    <Content Include="Assets\css\common.css" />
-    <Content Include="Assets\css\content.css" />
     <Content Include="Assets\css\content1.css" />
     <Content Include="Assets\css\css.css" />
     <Content Include="Assets\css\dropdown.css" />
@@ -181,11 +172,9 @@
     <Content Include="Assets\css\Layout.min.css" />
     <Content Include="Assets\css\livegraph.css" />
     <Content Include="Assets\css\livegraph1.css" />
-    <Content Include="Assets\css\menubar.css" />
     <Content Include="Assets\css\font\nevis-webfont.svg" />
     <Content Include="Assets\css\font\stylesheet.css" />
     <Content Include="Assets\css\Layout.css" />
-    <Content Include="Assets\css\mystyles.css" />
     <Content Include="Assets\css\Navigation.css" />
     <Content Include="Assets\css\Navigation1.css" />
     <Content Include="Assets\css\navslider.css" />
@@ -214,88 +203,26 @@
     <Content Include="Assets\css\style\svg_inject_scoial_line.js" />
     <Content Include="Assets\css\style\svg_inject_scoial_shadow.js" />
     <Content Include="Assets\css\tab.css" />
-    <Content Include="Assets\css\flat_SVGs\browser.svg" />
-    <Content Include="Assets\css\flat_SVGs\brush.svg" />
-    <Content Include="Assets\css\flat_SVGs\calander.svg" />
-    <Content Include="Assets\css\flat_SVGs\camera.svg" />
-    <Content Include="Assets\css\flat_SVGs\clock.svg" />
-    <Content Include="Assets\css\flat_SVGs\coffee.svg" />
-    <Content Include="Assets\css\flat_SVGs\diamond.svg" />
-    <Content Include="Assets\css\flat_SVGs\disk.svg" />
-    <Content Include="Assets\css\flat_SVGs\email.svg" />
-    <Content Include="Assets\css\flat_SVGs\film.svg" />
-    <Content Include="Assets\css\flat_SVGs\flag.svg" />
-    <Content Include="Assets\css\flat_SVGs\folder.svg" />
-    <Content Include="Assets\css\flat_SVGs\graph.svg" />
-    <Content Include="Assets\css\flat_SVGs\heart.svg" />
-    <Content Include="Assets\css\flat_SVGs\home.svg" />
-    <Content Include="Assets\css\flat_SVGs\lightning.svg" />
-    <Content Include="Assets\css\flat_SVGs\location.svg" />
-    <Content Include="Assets\css\flat_SVGs\lock.svg" />
-    <Content Include="Assets\css\flat_SVGs\magnify.svg" />
-    <Content Include="Assets\css\flat_SVGs\message.svg" />
-    <Content Include="Assets\css\flat_SVGs\mic.svg" />
-    <Content Include="Assets\css\flat_SVGs\paper.svg" />
-    <Content Include="Assets\css\flat_SVGs\pencil.svg" />
-    <Content Include="Assets\css\flat_SVGs\phone.svg" />
-    <Content Include="Assets\css\flat_SVGs\picture.svg" />
-    <Content Include="Assets\css\flat_SVGs\plane.svg" />
-    <Content Include="Assets\css\flat_SVGs\present.svg" />
-    <Content Include="Assets\css\flat_SVGs\robot.svg" />
-    <Content Include="Assets\css\flat_SVGs\rocket.svg" />
-    <Content Include="Assets\css\flat_SVGs\screen.svg" />
-    <Content Include="Assets\css\flat_SVGs\settings.svg" />
-    <Content Include="Assets\css\flat_SVGs\spaceship.svg" />
-    <Content Include="Assets\css\flat_SVGs\storm.svg" />
-    <Content Include="Assets\css\flat_SVGs\suitcase.svg" />
-    <Content Include="Assets\css\flat_SVGs\tag.svg" />
-    <Content Include="Assets\css\flat_SVGs\thumbsdown.svg" />
-    <Content Include="Assets\css\flat_SVGs\thumbsup.svg" />
-    <Content Include="Assets\css\flat_SVGs\trash.svg" />
-    <Content Include="Assets\css\flat_SVGs\user.svg" />
-    <Content Include="Assets\css\flat_SVGs\winner.svg" />
     <Content Include="Assets\css\Telerik.css" />
     <Content Include="Assets\demo.html" />
-    <Content Include="Assets\img\30.png" />
     <Content Include="Assets\img\32.png" />
-    <Content Include="Assets\img\48.png" />
-    <Content Include="Assets\img\adobe-icon.png" />
     <Content Include="Assets\img\adobe-icon1.png" />
     <Content Include="Assets\img\ajax-loader.gif" />
     <Content Include="Assets\img\ajax-loader1.gif" />
-    <Content Include="Assets\img\arrow-216-16.png" />
     <Content Include="Assets\img\arrow-24.png" />
-    <Content Include="Assets\img\arrow.png" />
     <Content Include="Assets\img\arrow12.png" />
     <Content Include="Assets\img\arrow6.png" />
-    <Content Include="Assets\img\axis.png" />
-    <Content Include="Assets\img\bar-chart-5-24.png" />
     <Content Include="Assets\img\cancel-24.png" />
-    <Content Include="Assets\img\chart-icon.png" />
-    <Content Include="Assets\img\check-mark-16.png" />
     <Content Include="Assets\img\Checks.png" />
-    <Content Include="Assets\img\comments-icon.png" />
     <Content Include="Assets\img\comments-icon1.png" />
-    <Content Include="Assets\img\database-16.ico" />
-    <Content Include="Assets\img\database-16.png" />
-    <Content Include="Assets\img\default-bg.jpg" />
-    <Content Include="Assets\img\default-bg.png" />
     <Content Include="Assets\img\delete_.png" />
     <Content Include="Assets\img\down-arrow.jpg" />
-    <Content Include="Assets\img\download-icon.png" />
     <Content Include="Assets\img\download-icon1.png" />
     <Content Include="Assets\img\downloads-20-hov.png" />
     <Content Include="Assets\img\downloads-20.png" />
-    <Content Include="Assets\img\downloads-24.png" />
-    <Content Include="Assets\img\downloads-icon1.png" />
-    <Content Include="Assets\img\down_arrow.png" />
-    <Content Include="Assets\img\edit-6-16.png" />
-    <Content Include="Assets\img\edit-8-16.png" />
     <Content Include="Assets\img\edit-8-20-hov.png" />
     <Content Include="Assets\img\edit-8-20.png" />
-    <Content Include="Assets\img\edit-8-24.png" />
     <Content Include="Assets\img\expand-16.ico" />
-    <Content Include="Assets\img\expand-24.ico" />
     <Content Include="Assets\img\h1.png" />
     <Content Include="Assets\img\h2.png" />
     <Content Include="Assets\img\h3.png" />
@@ -305,21 +232,12 @@
     <Content Include="Assets\img\ok-24.png" />
     <Content Include="Assets\img\pdf-16.png" />
     <Content Include="Assets\img\plus.png" />
-    <Content Include="Assets\img\progress-icon.png" />
     <Content Include="Assets\img\progress-icon1.png" />
-    <Content Include="Assets\img\reports.jpg" />
-    <Content Include="Assets\img\settings-4-16.png" />
     <Content Include="Assets\img\square-outline-16.png" />
-    <Content Include="Assets\img\stopwatch-24.png" />
-    <Content Include="Assets\img\upbg.jpg" />
     <Content Include="Assets\img\upbg.png" />
     <Content Include="Assets\img\update-24.png" />
-    <Content Include="Assets\img\view-icon.png" />
-    <Content Include="Assets\img\view-icons.png" />
     <Content Include="Assets\img\x-mark-20.png" />
     <Content Include="Assets\img\x-mark-20_hover.png" />
-    <Content Include="Assets\img\x-mark-24.png" />
-    <Content Include="Assets\img\x.png" />
     <Content Include="Assets\jquery.min.js" />
     <Content Include="Assets\js\03.js" />
     <Content Include="Assets\js\basic.js" />
@@ -348,21 +266,6 @@
     <Content Include="Assets\OwnStyle.css" />
     <Content Include="AuthLogin.aspx" />
     <Content Include="CMLT.aspx" />
-    <Content Include="CMS\Content.html" />
-    <Content Include="CMS\Head.aspx" />
-    <Content Include="CMS\InnerNav.aspx" />
-    <Content Include="CMS\Menubar.aspx" />
-    <Content Include="CMS\Navbar.aspx" />
-    <Content Include="CMS\P123\CASSummary_Graph.aspx" />
-    <Content Include="CMS\P123\ImportExcel.aspx" />
-    <Content Include="CMS\P123\Reportcms.aspx" />
-    <Content Include="CMS\P123\Schedule_P123_2.aspx" />
-    <Content Include="CMS\P123\Schedule_P123_3.aspx" />
-    <Content Include="CMS\P123\Schedule_P123_5.aspx" />
-    <Content Include="CMS\P123\Summary.aspx" />
-    <Content Include="CMS\Project.aspx" />
-    <Content Include="CMS\Schedule.aspx" />
-    <Content Include="CMS\WebForm1.aspx" />
     <Content Include="csf\animate.css" />
     <Content Include="csf\bootstrap.css" />
     <Content Include="csf\bootstrap.min.css" />
@@ -489,20 +392,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ADM\Header.aspx.cs">
-      <DependentUpon>Header.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ADM\Header.aspx.designer.cs">
-      <DependentUpon>Header.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ADM\Management.aspx.cs">
-      <DependentUpon>Management.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ADM\Management.aspx.designer.cs">
-      <DependentUpon>Management.aspx</DependentUpon>
-    </Compile>
     <Compile Include="ADM\User.aspx.cs">
       <DependentUpon>User.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -523,13 +412,6 @@
     </Compile>
     <Compile Include="AMS\Head.aspx.designer.cs">
       <DependentUpon>Head.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="AMS\Innernav.aspx.cs">
-      <DependentUpon>Innernav.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AMS\Innernav.aspx.designer.cs">
-      <DependentUpon>Innernav.aspx</DependentUpon>
     </Compile>
     <Compile Include="AMS\Menubar.aspx.cs">
       <DependentUpon>Menubar.aspx</DependentUpon>
@@ -553,93 +435,6 @@
       <DependentUpon>Project.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="CMS\InnerNav.aspx.cs">
-      <DependentUpon>InnerNav.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CMS\InnerNav.aspx.designer.cs">
-      <DependentUpon>InnerNav.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CMS\P123\CASSummary_Graph.aspx.cs">
-      <DependentUpon>CASSummary_Graph.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CMS\P123\CASSummary_Graph.aspx.designer.cs">
-      <DependentUpon>CASSummary_Graph.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CMS\P123\cas_mv.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>cas_mv.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="CMS\P123\cas_tx.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>cas_tx.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="CMS\P123\Graph.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Graph.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="CMS\P123\Graph123.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Graph123.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="CMS\P123\ImportExcel.aspx.cs">
-      <DependentUpon>ImportExcel.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CMS\P123\ImportExcel.aspx.designer.cs">
-      <DependentUpon>ImportExcel.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CMS\P123\Reportcms.aspx.cs">
-      <DependentUpon>Reportcms.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CMS\P123\Reportcms.aspx.designer.cs">
-      <DependentUpon>Reportcms.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CMS\P123\Schedule_P123_2.aspx.cs">
-      <DependentUpon>Schedule_P123_2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CMS\P123\Schedule_P123_2.aspx.designer.cs">
-      <DependentUpon>Schedule_P123_2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CMS\P123\Schedule_P123_3.aspx.cs">
-      <DependentUpon>Schedule_P123_3.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CMS\P123\Schedule_P123_3.aspx.designer.cs">
-      <DependentUpon>Schedule_P123_3.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CMS\P123\Schedule_P123_5.aspx.cs">
-      <DependentUpon>Schedule_P123_5.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CMS\P123\Schedule_P123_5.aspx.designer.cs">
-      <DependentUpon>Schedule_P123_5.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CMS\P123\Summary.aspx.cs">
-      <DependentUpon>Summary.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CMS\P123\Summary.aspx.designer.cs">
-      <DependentUpon>Summary.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CMS\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CMS\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DMSReports.Master.cs">
       <DependentUpon>DMSReports.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1275,41 +1070,6 @@
     <Compile Include="CMLT.aspx.designer.cs">
       <DependentUpon>CMLT.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CMS\Head.aspx.cs">
-      <DependentUpon>Head.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CMS\Head.aspx.designer.cs">
-      <DependentUpon>Head.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CMS\Menubar.aspx.cs">
-      <DependentUpon>Menubar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CMS\Menubar.aspx.designer.cs">
-      <DependentUpon>Menubar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CMS\Navbar.aspx.cs">
-      <DependentUpon>Navbar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CMS\Navbar.aspx.designer.cs">
-      <DependentUpon>Navbar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CMS\Project.aspx.cs">
-      <DependentUpon>Project.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CMS\Project.aspx.designer.cs">
-      <DependentUpon>Project.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CMS\Schedule.aspx.cs">
-      <DependentUpon>Schedule.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CMS\Schedule.aspx.designer.cs">
-      <DependentUpon>Schedule.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DMS\DocumentList_.aspx.cs">
       <DependentUpon>DocumentList_.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1415,22 +1175,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CMS\P123\cas_mv.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>cas_mv.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CMS\P123\cas_tx.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>cas_tx.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CMS\P123\Graph.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Graph.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CMS\P123\Graph123.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Graph123.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="DMS\Comments_rpt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Comments_rpt.cs</LastGenOutput>
@@ -1492,7 +1236,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
-      <UserProperties UseJQuerySupport="False" UseAjaxifiedTemplates="False" />
+      <UserProperties UseAjaxifiedTemplates="False" UseJQuerySupport="False" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
