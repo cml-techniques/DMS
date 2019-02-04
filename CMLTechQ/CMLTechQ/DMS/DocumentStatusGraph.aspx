@@ -54,7 +54,7 @@
                         <div class="menubar" style="text-align: left">
                             <ul class="left" style="display:flex;justify-content:space-around;align-items:center;width:100%;padding-left:0;">
                                 <li><a href="#" onclick="goProgressReport(this);" id="pts" runat="server">Progress Tracking Sheet</a></li>
-                                <li><a href="#" class="active">Doument Status Graph</a></li>
+                                <li><a href="#" class="active">Document Status Graph</a></li>
                                 <li ><a href="#" onclick="gouploadsummary();">Summary of Uploads</a></li>
                             </ul>
                         </div>

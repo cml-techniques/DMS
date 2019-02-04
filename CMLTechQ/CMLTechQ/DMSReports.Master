@@ -38,7 +38,7 @@
                         <div class="menubar ">
                             <ul class="left">
                                 <li><a href="#" class="active">Progress Tracking Sheet</a></li>
-                                <li><a href="#">Doument Status Graph</a></li>
+                                <li><a href="#">Document Status Graph</a></li>
                                 <li class="last"><a href="#">Summary of Uploads</a></li>
                             </ul>
                         </div>
