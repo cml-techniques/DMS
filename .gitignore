@@ -6,3 +6,6 @@ DMSDataAccess/obj/**
 *.pdb
 *.txt
 *.pp
+*.force
+*.cache
+*.cache

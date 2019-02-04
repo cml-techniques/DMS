@@ -239,26 +239,18 @@
     <Content Include="Assets\img\x-mark-20.png" />
     <Content Include="Assets\img\x-mark-20_hover.png" />
     <Content Include="Assets\jquery.min.js" />
-    <Content Include="Assets\js\03.js" />
-    <Content Include="Assets\js\basic.js" />
     <Content Include="Assets\js\ckeditor.js" />
-    <Content Include="Assets\js\common-scripts.js" />
     <Content Include="Assets\js\custom.js" />
     <Content Include="Assets\js\dropdown.js" />
     <Content Include="Assets\js\jquery-1.3.2.js" />
     <Content Include="Assets\js\jquery-1.9.1.min.js" />
-    <Content Include="Assets\js\jquery-ui.min.js" />
     <Content Include="Assets\js\jquery.accordion.js" />
-    <Content Include="Assets\js\jquery.als-1.2.min.js" />
     <Content Include="Assets\js\jquery.carouFredSel-6.0.4-packed.js" />
-    <Content Include="Assets\js\jquery.js" />
     <Content Include="Assets\js\jquery.livegraph.js" />
     <Content Include="Assets\js\jquery.min.js" />
     <Content Include="Assets\js\jquery.MultiFile.js" />
     <Content Include="Assets\js\jquery.nicescroll.js" />
-    <Content Include="Assets\js\jquery.simplemodal.js" />
     <Content Include="Assets\js\jquery.slimscroll.min.js" />
-    <Content Include="Assets\js\jquery.tabs.js" />
     <Content Include="Assets\js\jquery.tabs.min.js" />
     <Content Include="Assets\js\plugins.js" />
     <Content Include="Assets\offcanvas\docs.js" />
@@ -268,13 +260,11 @@
     <Content Include="CMLT.aspx" />
     <Content Include="csf\animate.css" />
     <Content Include="csf\bootstrap.css" />
-    <Content Include="csf\bootstrap.min.css" />
     <Content Include="csf\style.css" />
     <Content Include="csf\sweetalert.css" />
     <Content Include="CMLT1.aspx" />
     <Content Include="DMS\CommentList.aspx" />
     <Content Include="DMS\dmsuploads1.aspx" />
-    <Content Include="DMS\dms_lib.aspx" />
     <Content Include="DMS\DMS_Library.aspx" />
     <Content Include="DMS\DMS_Library_AddNewDoc.aspx" />
     <Content Include="DMS\DMS_Library_General.aspx" />
@@ -373,7 +363,6 @@
     <Content Include="jsf\CTplusPagination.js" />
     <Content Include="jsf\Datatable.Responsive.js" />
     <Content Include="jsf\dataTables.bootstrap.min.js" />
-    <Content Include="jsf\datatables.responsive.min.js" />
     <Content Include="jsf\dataTables.tableTools.min.js" />
     <Content Include="jsf\inspinia.js" />
     <Content Include="jsf\jquery-2.1.1.js" />
@@ -487,13 +476,6 @@
     </Compile>
     <Compile Include="DMS\dmsuploads1.aspx.designer.cs">
       <DependentUpon>dmsuploads1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DMS\dms_lib.aspx.cs">
-      <DependentUpon>dms_lib.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DMS\dms_lib.aspx.designer.cs">
-      <DependentUpon>dms_lib.aspx</DependentUpon>
     </Compile>
     <Compile Include="DMS\DMS_Library.aspx.cs">
       <DependentUpon>DMS_Library.aspx</DependentUpon>
@@ -1236,7 +1218,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
-      <UserProperties UseAjaxifiedTemplates="False" UseJQuerySupport="False" />
+      <UserProperties UseJQuerySupport="False" UseAjaxifiedTemplates="False" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
