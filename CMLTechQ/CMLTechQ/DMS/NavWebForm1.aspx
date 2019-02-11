@@ -483,52 +483,13 @@
 
     <%: Scripts.Render("~/bundles/scripts") %>
     <script async type="text/javascript">
-        //function RetriveDocumentDetails(id, status, contactor, mtitle, revision) {
-        //     document.getElementById('txt_doctitle').value = mtitle;
-        //     document.getElementById('txtdocid').value = id;
-        //     SetCheckBox('drcontractor', contactor)
-        //     SetCheckBox('drstatus', status)
-        //     SetCheckBox('dr_revision', revision)
-        //     //GetListIndex(revision);
-
-        //     $('#btndummy1').click();
-        // }
-
-        //function SetNoReview() {
-        //    var _chk = document.getElementById('chknoreview').checked;
-
-
-        //    if (_chk == true) {
-        //        document.getElementById('chkglobalperiod').checked = false;
-        //    }
-        //    else {
-        //        document.getElementById('chknoreview').checked = false;
-
-        //    }
-        //}
-        //function godownload(_id, type) {
-
-
-        //    document.getElementById("hdocid").value = _id;
-
-
-        //    if (type == 1) {
-        //        $('#btndownload').click();
-        //    }
-        //    else {
-        //        $('#btndownload1').click();
-        //    }
-
-
-        //}
+       
         function goProgress() {
             var _auth1 = document.getElementById("lbluseridhidden");
             var _auth2 = document.getElementById("lblprjid");
             var url = "pts1?Auth1=" + _auth1.textContent + "&Auth2=" + _auth2.textContent + "&Auth3=0";
             parent.location.replace(url);
-            //parent.document.getElementById("content").src = "ProgressTrackingSheet?Auth1=" + _auth1.textContent + "&Auth2=" + _auth2.textContent + "&Auth3=" + 0;
-            //parent.document.getElementById("innernav").src = "InnerNav?Auth1=" + _auth1.textContent + "&Auth2=" + _auth2.textContent + "&Auth3=" + -1;
-            //parent.toggle();
+          
         }
         function GoComments(_id, _comment) {
             var _auth1 = document.getElementById("<%=lbluseridhidden.ClientID %>");
@@ -541,28 +502,12 @@
             //}
 
         }
-        //function godelete(_id) {
 
-        //    //var vconfm = confirm("Do you want to delete");
-        //    //if (vconfm == true) {
-        //    document.getElementById("txtdocid").value = _id;
-        //    $('#btndelete').click();
-        //    //}
-
-
-        //}
         function _autoAdjust() {
             //alert(msieversion());
             var div = $("#main-content").height();
             var win = $(window).height();
             if (div < win) {
-                //if (msieversion() > 0) {
-                //    var win = $(window).height() - 40;
-                //}
-                //else {
-                //var win = $(window).height() - 50;
-                //}
-                ///$("#main-content").height(win);
                 $("#main-content").addClass("botzero");
             }
             else {
@@ -591,30 +536,16 @@
             }
         }
 
-        //function SetCheckBox(chk, value) {
-        //    var e = document.getElementById(chk);
-
-        //    for (var i = 0; i <= document.getElementById(chk).length - 1; i = i + 1) {
-        //        var ddlText = document.getElementById(chk).options[i].outerText;
-        //        if (ddlText == value) {
-        //            document.getElementById(chk).selectedIndex = i;
-        //            e.selectedIndex = i;
-        //            break;
-        //        }
-        //    }
-
-        //}
         function CallViewer(_id, _file, _review) {
             var _auth1 = document.getElementById("<%=lbluseridhidden.ClientID %>");
             var _auth2 = document.getElementById("<%=lblprjid.ClientID %>");
             var _auth3 = document.getElementById("<%=lblfolder.ClientID %>");
-
-
             document.getElementById("<%=hfile.ClientID %>").value = _file;
             document.getElementById("<%=hreview.ClientID %>").value = _review;
             document.getElementById("<%=hdocid.ClientID %>").value = _id;
-            $("#<%=btndummyView.ClientID %>").click();
-
+            $("#<%=btndummyView.ClientID %>").click();            
+        }
+      
     </script>
     <script type="text/javascript">
 
